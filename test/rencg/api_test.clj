@@ -40,6 +40,7 @@
 
 (deftest re-matches-ncg-tests
   (testing "Nil regexes and/or input strings"
+    ; Not a fan of throwing exceptions in these cases, but for better or worse this behaviour is compatible with clojure.core/re-matches
     (is (thrown? java.lang.NullPointerException (re-matches-ncg nil   nil)))
     (is (thrown? java.lang.NullPointerException (re-matches-ncg #".*" nil)))
     (is (thrown? java.lang.NullPointerException (re-matches-ncg nil   ""))))
