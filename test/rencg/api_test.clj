@@ -51,10 +51,11 @@
     (is (nil? (re-matches-ncg #"(?<foo>foo)" "")))
     (is (nil? (re-matches-ncg apache-re      "Mozilla"))))
   (testing "Matches that don't have named-capturing groups"
-    (is (= {} (re-matches-ncg #".*"             "")))
-    (is (= {} (re-matches-ncg #"foo"            "foo")))
+    (is (= {} (re-matches-ncg #".*"  "")))
+    (is (= {} (re-matches-ncg #"foo" "foo"))))
+  (testing "Matches that do have named-capturing groups, but they don't have values in the matched text"
     (is (= {} (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
-  (testing "Matches that do have named-capturing groups"
+  (testing "Matches that do have named-capturing groups, and some or all of them have values"
     (is (= {"foo" "foo"}                      (re-matches-ncg #"(?<foo>foo)"    "foo")))
     (is (= {"content" "foobar"}               (re-matches-ncg #"(?<content>.*)" "foobar")))
     (is (= {"name" "Apache"}                  (re-matches-ncg apache-re "Apache")))
