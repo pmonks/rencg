@@ -32,19 +32,26 @@
   "Equivalent to clojure.core/re-matches, but instead of returning
   the match and sequence of groups, returns a (potentially empty)
   map of just the named-capturing groups in the regex if there was
-  a match, or nil otherwise. Each key in the map is the name of a
-  named-capturing group, and each value is the corresponding value
-  of that group."
-  [re s]
-  (let [matcher (re-matcher re s)]
-    (when (.matches matcher)
-      (let [ncgs (re-named-groups re)]
-        (loop [result {}
-               f      (first ncgs)
-               r      (rest ncgs)]
-          (if f
-            (let [v (try (.group matcher ^String f) (catch java.lang.IllegalArgumentException _ nil))]
-              (recur (merge result (when v {f v}))
-                     (first r)
-                     (rest r)))
-            result))))))
+  a match, or nil if the regex didn't match. Each key in the map is
+  the String value of the name of that named-capturing group, and
+  the corresponding value is a String containing the text that
+  matched that group.
+
+  If the regex is being reused many times, the 3-arg version will
+  be more efficient as it allows the caller to calculate the
+  named-capturing groups in the regex once, then reuse that
+  information, avoiding re-parsing of the regex on each call."
+  ([re s] (re-matches-ncg re s nil))
+  ([re s ncgs]
+   (let [matcher (re-matcher re s)]
+     (when (.matches matcher)
+       (let [ncgs (or ncgs (re-named-groups re))]
+         (loop [result {}
+                f      (first ncgs)
+                r      (rest ncgs)]
+           (if f
+             (let [v (try (.group matcher ^String f) (catch java.lang.IllegalArgumentException _ nil))]
+               (recur (merge result (when v {f v}))
+                      (first r)
+                      (rest r)))
+             result)))))))
