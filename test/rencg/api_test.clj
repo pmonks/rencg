@@ -24,13 +24,13 @@
 
 (deftest re-named-groups-tests
   (testing "Nil, empty or blank regexes"
-    (is (nil?   (re-named-groups nil)))
-    (is (empty? (re-named-groups #"")))
-    (is (empty? (re-named-groups #"      ")))
-    (is (empty? (re-named-groups #"\n\t\r"))))
+    (is (nil?  (re-named-groups nil)))
+    (is (= #{} (re-named-groups #"")))
+    (is (= #{} (re-named-groups #"      ")))
+    (is (= #{} (re-named-groups #"\n\t\r"))))
   (testing "Regexes with no named-capturing groups"
-    (is (empty? (re-named-groups #".*")))
-    (is (empty? (re-named-groups #"(.*)"))))
+    (is (= #{} (re-named-groups #".*")))
+    (is (= #{} (re-named-groups #"(.*)"))))
   (testing "Regexes with named-capturing groups"
     (is (= #{"namedGroup"}             (re-named-groups #"(?<namedGroup>.*)")))
     (is (= #{"givenName" "familyName"} (re-named-groups #"(?<givenName>.*)\s+(?<familyName>.*)")))
@@ -46,9 +46,9 @@
     (is (nil? (re-matches-ncg #"foo"    "")))
     (is (nil? (re-matches-ncg apache-re "Mozilla"))))
   (testing "Matches that don't have named-capturing groups"
-    (is (empty? (re-matches-ncg #".*"             "")))
-    (is (empty? (re-matches-ncg #"foo"            "foo")))
-    (is (empty? (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
+    (is (= {} (re-matches-ncg #".*"             "")))
+    (is (= {} (re-matches-ncg #"foo"            "foo")))
+    (is (= {} (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
   (testing "Matches that don't have named-capturing groups"
     (is (= {"foo" "foo"}                      (re-matches-ncg #"(?<foo>foo)"    "foo")))
     (is (= {"content" "foobar"}               (re-matches-ncg #"(?<content>.*)" "foobar")))
