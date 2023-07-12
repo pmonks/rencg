@@ -71,6 +71,7 @@
       (is (nil?                                 (re-matches-ncg #"(?<foo>foo)" ""                                  ncgs)))
       (is (= {}                                 (re-matches-ncg #"foo"         "foo"                               ncgs)))
       ; These cases make more sense
+      (is (= {"foo" "foo"}                      (re-matches-ncg #"(?<foo>foo)" "foo"                               #{"foo"})))
       (is (nil?                                 (re-matches-ncg apache-re      "Mozilla"                           ncgs)))
       (is (= {"name" "Apache"}                  (re-matches-ncg apache-re      "Apache"                            ncgs)))
       (is (= {"name" "apache"}                  (re-matches-ncg apache-re      "apache"                            ncgs)))
