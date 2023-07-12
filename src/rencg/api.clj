@@ -33,7 +33,7 @@
   java.util.regex.Matcher.matches(). Returns a (potentially
   empty) map of the named-capturing groups in the regex if there
   was a match, or nil otherwise. Each key in the map is the name
-  of a name-capturing group, and each value is the corresponding
+  of a named-capturing group, and each value is the corresponding
   value in the string that matched that group."
   [re s]
   (let [matcher (re-matcher re s)]
