@@ -12,7 +12,7 @@ If the regex is being reused many times, the 3-arg version will
 be more efficient as it allows the caller to calculate the
 named-capturing groups in the regex once, then reuse that
 information, avoiding re-parsing of the regex on each call.</pre></div><div class="src-link"><a href="https://github.com/pmonks/rencg/blob/main/src/rencg/api.clj#L31">view source</a></div></div><div class="public anchor" id="var-re-named-groups"><h3>re-named-groups</h3><div class="usage"><code>(re-named-groups re)</code></div><div class="doc"><pre class="plaintext">Returns the names of all of the named-capturing groups in the
-given regular expression as a set.
+given regular expression, as a set of Strings.
 
 Note: JDK-agnostic workaround for <a href="https://bugs.openjdk.org/browse/JDK-7032377">https://bugs.openjdk.org/browse/JDK-7032377</a>
 (which is fixed in JDK 20)</pre></div><div class="src-link"><a href="https://github.com/pmonks/rencg/blob/main/src/rencg/api.clj#L21">view source</a></div></div></div></body></html>
