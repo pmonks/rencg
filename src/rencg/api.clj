@@ -19,12 +19,13 @@
 (ns rencg.api)
 
 (defn re-named-groups
-  "Returns a sequence of the names of all of the named-capturing
-  groups in the given regular expression.
+  "Returns the names of all of the named-capturing groups in the
+  given regular expression as a set.
+
   Note: JDK-agnostic workaround for https://bugs.openjdk.org/browse/JDK-7032377
   (which is fixed in JDK 20)"
   [re]
-  (when re (map second (re-seq #"\(\?<([a-zA-Z][a-zA-Z0-9]*)>" (str re)))))
+  (when re (set (map second (re-seq #"\(\?<([a-zA-Z][a-zA-Z0-9]*)>" (str re))))))
 
 
 (defn re-matches-ncg

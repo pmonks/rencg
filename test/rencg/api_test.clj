@@ -32,9 +32,11 @@
     (is (empty? (re-named-groups #".*")))
     (is (empty? (re-named-groups #"(.*)"))))
   (testing "Regexes with named-capturing groups"
-    (is (= '("namedGroup")             (re-named-groups #"(?<namedGroup>.*)")))
-    (is (= '("givenName" "familyName") (re-named-groups #"(?<givenName>.*)\s+(?<familyName>.*)")))
-    (is (= '("name" "version")         (re-named-groups apache-re)))))
+    (is (= #{"namedGroup"}             (re-named-groups #"(?<namedGroup>.*)")))
+    (is (= #{"givenName" "familyName"} (re-named-groups #"(?<givenName>.*)\s+(?<familyName>.*)")))
+    (is (= #{"name" "version"}         (re-named-groups apache-re)))
+    (is (= #{"outer" "inner"}          (re-named-groups #"(?<outer>foo(?<inner>bar)?)")))                 ; Nested named groups
+    (is (= #{"outer" "inner"}          (re-named-groups #"(?<outer>foo)(\s+blah(?<inner>\s+bar)?)?")))))  ; Nested named groups, but in different groups
 
 (deftest re-matches-ncg-tests
   (testing "Nil, empty or blank regexes and/or input strings"
