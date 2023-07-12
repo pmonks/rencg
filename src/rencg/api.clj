@@ -20,7 +20,7 @@
 
 (defn re-named-groups
   "Returns the names of all of the named-capturing groups in the
-  given regular expression as a set.
+  given regular expression, as a set of Strings.
 
   Note: JDK-agnostic workaround for https://bugs.openjdk.org/browse/JDK-7032377
   (which is fixed in JDK 20)"
