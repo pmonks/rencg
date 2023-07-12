@@ -20,6 +20,8 @@
   (:require [clojure.test :refer [deftest testing is]]
             [rencg.api    :refer [re-named-groups re-matches-ncg]]))
 
+(def apache-re #"(?i)(?<name>Apache)(\s+Software)?(\s+License(s)?(\s*[,-])?)?(\s+V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?")
+
 (deftest re-named-groups-tests
   (testing "Nil, empty or blank regexes"
     (is (nil?   (re-named-groups nil)))
@@ -31,9 +33,8 @@
     (is (empty? (re-named-groups #"(.*)"))))
   (testing "Regexes with named-capturing groups"
     (is (= '("namedGroup")             (re-named-groups #"(?<namedGroup>.*)")))
-    (is (= '("givenName" "familyName") (re-named-groups #"(?<givenName>.*)\s+(?<familyName>.*)")))))
-
-(def apache-re #"(?i)(?<name>Apache)(\s+Software)?(\s+License(s)?(\s*[,-])?)?(\s+V(ersion)?)?\s*(?<version>\d+(\.\d+)?)?")
+    (is (= '("givenName" "familyName") (re-named-groups #"(?<givenName>.*)\s+(?<familyName>.*)")))
+    (is (= '("name" "version")         (re-named-groups apache-re)))))
 
 (deftest re-matches-ncg-tests
   (testing "Nil, empty or blank regexes and/or input strings"
