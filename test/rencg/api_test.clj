@@ -39,17 +39,22 @@
     (is (= #{"outer" "inner"}          (re-named-groups #"(?<outer>foo)(\s+blah(?<inner>\s+bar)?)?")))))  ; Nested named groups, but in different groups
 
 (deftest re-matches-ncg-tests
-  (testing "Nil, empty or blank regexes and/or input strings"
+  (testing "Nil regexes and/or input strings"
     (is (thrown? java.lang.NullPointerException (re-matches-ncg nil   nil)))
-    (is (thrown? java.lang.NullPointerException (re-matches-ncg #".*" nil))))
+    (is (thrown? java.lang.NullPointerException (re-matches-ncg #".*" nil)))
+    (is (thrown? java.lang.NullPointerException (re-matches-ncg nil   ""))))
   (testing "Non-matches that don't have named-capturing groups"
-    (is (nil? (re-matches-ncg #"foo"    "")))
-    (is (nil? (re-matches-ncg apache-re "Mozilla"))))
+    (is (nil? (re-matches-ncg #"foo"   "")))
+    (is (nil? (re-matches-ncg #"foo"   "bar")))
+    (is (nil? (re-matches-ncg #"(foo)" ""))))
+  (testing "Non-matches that do have named-capturing groups"
+    (is (nil? (re-matches-ncg #"(?<foo>foo)" "")))
+    (is (nil? (re-matches-ncg apache-re      "Mozilla"))))
   (testing "Matches that don't have named-capturing groups"
     (is (= {} (re-matches-ncg #".*"             "")))
     (is (= {} (re-matches-ncg #"foo"            "foo")))
     (is (= {} (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
-  (testing "Matches that don't have named-capturing groups"
+  (testing "Matches that do have named-capturing groups"
     (is (= {"foo" "foo"}                      (re-matches-ncg #"(?<foo>foo)"    "foo")))
     (is (= {"content" "foobar"}               (re-matches-ncg #"(?<content>.*)" "foobar")))
     (is (= {"name" "Apache"}                  (re-matches-ncg apache-re "Apache")))
