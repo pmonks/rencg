@@ -29,12 +29,12 @@
 
 
 (defn re-matches-ncg
-  "Returns the match, if any, of string to pattern, using
-  java.util.regex.Matcher.matches(). Returns a (potentially
-  empty) map of the named-capturing groups in the regex if there
-  was a match, or nil otherwise. Each key in the map is the name
-  of a name-capturing group, and each value is the corresponding
-  value in the string that matched that group."
+  "Equivalent to clojure.core/re-matches, but instead of returning
+  the match and sequence of groups, returns a (potentially empty)
+  map of just the named-capturing groups in the regex if there was
+  a match, or nil otherwise. Each key in the map is the name of a
+  named-capturing group, and each value is the corresponding value
+  of that group."
   [re s]
   (let [matcher (re-matcher re s)]
     (when (.matches matcher)
