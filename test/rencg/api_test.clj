@@ -65,12 +65,12 @@
     (is (= {"name" "Apache", "version" "2"}   (re-matches-ncg apache-re         "Apache Software License Version 2"))))
   (testing "3-arg version"
     (let [ncgs (re-named-groups apache-re)]
-      ; Note: these first four are nonsensical since the names in ncgs don't correlate to the regexes, but we test these cases anyway to ensure correct behaviour
+      ; Note: these cases nonsensical since the names in ncgs don't correlate to the regexes, but we test these cases anyway to ensure correct behaviour
       (is (nil?                                 (re-matches-ncg #"foo"         ""                                  ncgs)))
       (is (nil?                                 (re-matches-ncg #"(?<foo>foo)" ""                                  ncgs)))
-      (is (nil?                                 (re-matches-ncg apache-re      "Mozilla"                           ncgs)))
       (is (= {}                                 (re-matches-ncg #"foo"         "foo"                               ncgs)))
       ; These cases make more sense
+      (is (nil?                                 (re-matches-ncg apache-re      "Mozilla"                           ncgs)))
       (is (= {"name" "Apache"}                  (re-matches-ncg apache-re      "Apache"                            ncgs)))
       (is (= {"name" "apache"}                  (re-matches-ncg apache-re      "apache"                            ncgs)))
       (is (= {"name" "Apache", "version" "2.0"} (re-matches-ncg apache-re      "Apache 2.0"                        ncgs)))
