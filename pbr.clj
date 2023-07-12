@@ -21,7 +21,7 @@
   [opts]
   (assoc opts
          :lib          'com.github.pmonks/rencg
-         :version      (pbr/calculate-version 0 1)
+         :version      (pbr/calculate-version 1 0)
          :write-pom    true
          :validate-pom true
          :pom          {:description      "A micro-library for Clojure that provides first class support for named-capturing groups in regular expressions."
