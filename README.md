@@ -10,7 +10,7 @@
 
 A micro-library for Clojure that provides first class support for accessing the values of [named-capturing groups](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html#groupname) in regular expressions. It has no dependencies, other than on Clojure and any supported JVM, and is [less than 100 lines of code](https://github.com/pmonks/rencg/blob/main/src/rencg/api.clj).
 
-## Why not [rufoa/named-re](https://github.com/rufoa/named-re)?
+#### Why not [rufoa/named-re](https://github.com/rufoa/named-re)?
 
 Because that library [monkey patches core Clojure](https://github.com/rufoa/named-re/blob/master/src/named_re/core.clj#L26-L32), which may break other code.
 
@@ -39,9 +39,9 @@ $ lein try com.github.pmonks/rencg
 $ deps-try com.github.pmonks/rencg
 ```
 
-### API Documentation
+## Usage
 
-[API documentation is available here](https://pmonks.github.io/rencg/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/).
+[API documentation is available here](https://pmonks.github.io/rencg/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/), and the [unit tests](https://github.com/pmonks/rencg/blob/main/test/rencg/api_test.clj) are also worth perusing to see worked examples.
 
 ## Contributor Information
 
