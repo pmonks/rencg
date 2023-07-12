@@ -62,4 +62,11 @@
     (is (= {"name" "apache"}                  (re-matches-ncg apache-re "apache")))
     (is (= {"name" "Apache", "version" "2.0"} (re-matches-ncg apache-re "Apache 2.0")))
     (is (= {"name" "Apache", "version" "1"}   (re-matches-ncg apache-re "Apache 1")))
-    (is (= {"name" "Apache", "version" "2"}   (re-matches-ncg apache-re "Apache Software License Version 2")))))
+    (is (= {"name" "Apache", "version" "2"}   (re-matches-ncg apache-re "Apache Software License Version 2"))))
+  (testing "3-arg version"
+    (let [ncgs (re-named-groups apache-re)]
+      (is (= {"name" "Apache"}                  (re-matches-ncg apache-re "Apache" ncgs)))
+      (is (= {"name" "apache"}                  (re-matches-ncg apache-re "apache" ncgs)))
+      (is (= {"name" "Apache", "version" "2.0"} (re-matches-ncg apache-re "Apache 2.0" ncgs)))
+      (is (= {"name" "Apache", "version" "1"}   (re-matches-ncg apache-re "Apache 1" ncgs)))
+      (is (= {"name" "Apache", "version" "2"}   (re-matches-ncg apache-re "Apache Software License Version 2" ncgs))))))
