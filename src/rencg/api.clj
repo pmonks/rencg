@@ -102,3 +102,19 @@
    (let [m (re-matcher re s)]
      (re-find-ncg m ncgs))))
 
+(defn re-seq-ncg
+  "Equivalent to clojure.core/re-seq, but returns the result
+  of calling re-groups-ncg on each successive match, or nil
+  if there are no matches.
+
+  If the regex is being reused many times, the 3-arg version
+  will be more efficient as it allows the caller to calculate
+  the named-capturing groups in the regex once, then reuse that
+  information, avoiding re-parsing of the regex on each call."
+  ([^java.util.regex.Pattern re s] (re-seq-ncg re s nil))
+  ([^java.util.regex.Pattern re s ncgs]
+   (let [ncgs (or ncgs (re-named-groups re))
+         m    (re-matcher re s)]
+     ((fn step []
+        (when (.find m)
+          (cons (re-groups-ncg m ncgs) (lazy-seq (step)))))))))
