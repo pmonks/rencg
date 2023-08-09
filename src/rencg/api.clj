@@ -42,10 +42,17 @@
 (defn re-groups-ncg
   "Equivalent to clojure.core/re-groups, but instead of returning
   a sequence containing the entire match and each group, it returns
-  a (potentially empty) map of just the named-capturing groups. Each
-  key in the map is the String value of the name of that named-
-  capturing group, and the corresponding value is a String containing
-  the text that matched that group."
+  a map of the named-capturing groups as well as the start and end of
+  the entire match (in keys :start and :end).
+
+  The key for each named-capturing group that's found is the (String)
+  name of that group, and the corresponding value is the (String) text
+  that matched that group.
+
+  If the same regex is being used many times, the 2-arg version will be
+  more efficient as it allows the caller to calculate the named-
+  capturing groups in the regex once, then reuse that information,
+  avoiding re-parsing of the regex on each call."
   ([^java.util.regex.Matcher m] (re-groups-ncg m nil))
   ([^java.util.regex.Matcher m ncgs]
    (let [ncgs (or ncgs (re-named-groups m))]
@@ -54,10 +61,15 @@
             r      (rest ncgs)]
        (if f
          (let [v (try (.group m ^String f) (catch java.lang.IllegalArgumentException _ nil))]
-           (recur (merge result (when v {f v}))
+           (recur (merge result
+                         {:start (.start m)
+                          :end   (.end   m)}
+                         (when v {f v}))
                   (first r)
                   (rest r)))
-         result)))))
+         (merge result
+                {:start (.start m)
+                 :end   (.end   m)}))))))
 
 (defn re-matches-ncg
   "Equivalent to clojure.core/re-matches, but returns the result
