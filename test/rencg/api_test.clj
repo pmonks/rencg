@@ -52,32 +52,32 @@
     (is (nil? (re-matches-ncg #"(?<foo>foo)" "")))
     (is (nil? (re-matches-ncg apache-re      "Mozilla"))))
   (testing "Matches that don't have named-capturing groups"
-    (is (= {} (re-matches-ncg #".*"  "")))
-    (is (= {} (re-matches-ncg #"foo" "foo"))))
+    (is (= {:start 0 :end 0} (re-matches-ncg #".*"  "")))
+    (is (= {:start 0 :end 3} (re-matches-ncg #"foo" "foo"))))
   (testing "Matches that do have named-capturing groups, but they don't have values in the matched text"
-    (is (= {} (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
+    (is (= {:start 0 :end 3} (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
   (testing "Matches that do have named-capturing groups, and some or all of them have values"
-    (is (= {"foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)"    "foo")))
-    (is (= {"content" "foobar"}              (re-matches-ncg #"(?<content>.*)" "foobar")))
-    (is (= {"name" "Apache"}                 (re-matches-ncg apache-re         "Apache")))
-    (is (= {"name" "apache"}                 (re-matches-ncg apache-re         "apache")))
-    (is (= {"name" "Apache" "version" "2.0"} (re-matches-ncg apache-re         "Apache 2.0")))
-    (is (= {"name" "Apache" "version" "1"}   (re-matches-ncg apache-re         "Apache 1")))
-    (is (= {"name" "Apache" "version" "2"}   (re-matches-ncg apache-re         "Apache Software License Version 2"))))
+    (is (= {:start 0 :end 3  "foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)"    "foo")))
+    (is (= {:start 0 :end 6  "content" "foobar"}              (re-matches-ncg #"(?<content>.*)" "foobar")))
+    (is (= {:start 0 :end 6  "name" "Apache"}                 (re-matches-ncg apache-re         "Apache")))
+    (is (= {:start 0 :end 6  "name" "apache"}                 (re-matches-ncg apache-re         "apache")))
+    (is (= {:start 0 :end 10 "name" "Apache" "version" "2.0"} (re-matches-ncg apache-re         "Apache 2.0")))
+    (is (= {:start 0 :end 8  "name" "Apache" "version" "1"}   (re-matches-ncg apache-re         "Apache 1")))
+    (is (= {:start 0 :end 33 "name" "Apache" "version" "2"}   (re-matches-ncg apache-re         "Apache Software License Version 2"))))
   (testing "Matches with pre-computed ncgs"
     (let [ncgs (re-named-groups apache-re)]
       ; Note: these cases are nonsensical since the names in ncgs don't correlate to the regexes, but we test these cases anyway to ensure reasonable behaviour
-      (is (nil?                                (re-matches-ncg #"foo"         ""                                  ncgs)))
-      (is (nil?                                (re-matches-ncg #"(?<foo>foo)" ""                                  ncgs)))
-      (is (= {}                                (re-matches-ncg #"foo"         "foo"                               ncgs)))
+      (is (nil?                                                 (re-matches-ncg #"foo"         ""                                  ncgs)))
+      (is (nil?                                                 (re-matches-ncg #"(?<foo>foo)" ""                                  ncgs)))
+      (is (= {:start 0 :end 3}                                  (re-matches-ncg #"foo"         "foo"                               ncgs)))
       ; These cases make more sense
-      (is (= {"foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)" "foo"                               #{"foo"})))
-      (is (nil?                                (re-matches-ncg apache-re      "Mozilla"                           ncgs)))
-      (is (= {"name" "Apache"}                 (re-matches-ncg apache-re      "Apache"                            ncgs)))
-      (is (= {"name" "apache"}                 (re-matches-ncg apache-re      "apache"                            ncgs)))
-      (is (= {"name" "Apache" "version" "2.0"} (re-matches-ncg apache-re      "Apache 2.0"                        ncgs)))
-      (is (= {"name" "Apache" "version" "1"}   (re-matches-ncg apache-re      "Apache 1"                          ncgs)))
-      (is (= {"name" "Apache" "version" "2"}   (re-matches-ncg apache-re      "Apache Software License Version 2" ncgs))))))
+      (is (= {:start 0 :end 3  "foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)" "foo"                               #{"foo"})))
+      (is (nil?                                                 (re-matches-ncg apache-re      "Mozilla"                           ncgs)))
+      (is (= {:start 0 :end 6  "name" "Apache"}                 (re-matches-ncg apache-re      "Apache"                            ncgs)))
+      (is (= {:start 0 :end 6  "name" "apache"}                 (re-matches-ncg apache-re      "apache"                            ncgs)))
+      (is (= {:start 0 :end 10 "name" "Apache" "version" "2.0"} (re-matches-ncg apache-re      "Apache 2.0"                        ncgs)))
+      (is (= {:start 0 :end 8  "name" "Apache" "version" "1"}   (re-matches-ncg apache-re      "Apache 1"                          ncgs)))
+      (is (= {:start 0 :end 33 "name" "Apache" "version" "2"}   (re-matches-ncg apache-re      "Apache Software License Version 2" ncgs))))))
 
 (deftest re-find-ncg-tests
   (testing "Nil regexes and/or input strings"
@@ -93,53 +93,53 @@
     (is (nil? (re-find-ncg #"(?<foo>foo)" "")))
     (is (nil? (re-find-ncg apache-re      "Mozilla"))))
   (testing "Finds that don't have named-capturing groups"
-    (is (= {} (re-find-ncg #".*"  "")))
-    (is (= {} (re-find-ncg #"foo" "foo"))))
+    (is (= {:start 0 :end 0} (re-find-ncg #".*"  "")))
+    (is (= {:start 0 :end 3} (re-find-ncg #"foo" "foo"))))
   (testing "Finds that do have named-capturing groups, but they don't have values in the matched text"
-    (is (= {} (re-find-ncg #"(?<foo>foo)?.*" "bar"))))
+    (is (= {:start 0 :end 3} (re-find-ncg #"(?<foo>foo)?.*" "bar"))))
   (testing "Finds that do have named-capturing groups, and some or all of them have values"
-    (is (= {"foo" "foo"}                     (re-find-ncg #"(?<foo>foo)"    "foo")))
-    (is (= {"foo" "foo"}                     (re-find-ncg #"(?<foo>foo)"    "prefix foo suffix")))
-    (is (= {"content" "foobar"}              (re-find-ncg #"(?<content>.*)" "foobar")))
-    (is (= {"name" "Apache"}                 (re-find-ncg apache-re         "Apache")))
-    (is (= {"name" "apache"}                 (re-find-ncg apache-re         "apache")))
-    (is (= {"name" "Apache" "version" "2.0"} (re-find-ncg apache-re         "Apache 2.0")))
-    (is (= {"name" "Apache" "version" "1"}   (re-find-ncg apache-re         "Apache 1")))
-    (is (= {"name" "Apache" "version" "2"}   (re-find-ncg apache-re         "Apache Software License Version 2")))
-    (is (= {"name" "Apache" "version" "2"}   (re-find-ncg apache-re         "prefix Apache Software License Version 2 suffix"))))
+    (is (= {:start 0 :end 3  "foo" "foo"}                     (re-find-ncg #"(?<foo>foo)"    "foo")))
+    (is (= {:start 7 :end 10 "foo" "foo"}                     (re-find-ncg #"(?<foo>foo)"    "prefix foo suffix")))
+    (is (= {:start 0 :end 6  "content" "foobar"}              (re-find-ncg #"(?<content>.*)" "foobar")))
+    (is (= {:start 0 :end 6  "name" "Apache"}                 (re-find-ncg apache-re         "Apache")))
+    (is (= {:start 0 :end 6  "name" "apache"}                 (re-find-ncg apache-re         "apache")))
+    (is (= {:start 0 :end 10 "name" "Apache" "version" "2.0"} (re-find-ncg apache-re         "Apache 2.0")))
+    (is (= {:start 0 :end 8  "name" "Apache" "version" "1"}   (re-find-ncg apache-re         "Apache 1")))
+    (is (= {:start 0 :end 33 "name" "Apache" "version" "2"}   (re-find-ncg apache-re         "Apache Software License Version 2")))
+    (is (= {:start 7 :end 40 "name" "Apache" "version" "2"}   (re-find-ncg apache-re         "prefix Apache Software License Version 2 suffix"))))
   (testing "Repeated finds, reusing the same matcher"
     (let [re   #"(?<foo>foo)"
           s    "foofoofoo"
           ncgs (re-named-groups re)
           m    (re-matcher re s)]
-      (is (= {"foo" "foo"} (re-find-ncg m ncgs)))   ; First foo in s
-      (is (= {"foo" "foo"} (re-find-ncg m ncgs)))   ; Second foo in s
-      (is (= {"foo" "foo"} (re-find-ncg m ncgs)))   ; Third foo
+      (is (= {:start 0 :end 3 "foo" "foo"} (re-find-ncg m ncgs)))   ; First foo in s
+      (is (= {:start 3 :end 6 "foo" "foo"} (re-find-ncg m ncgs)))   ; Second foo in s
+      (is (= {:start 6 :end 9 "foo" "foo"} (re-find-ncg m ncgs)))   ; Third foo
       (is (nil?            (re-find-ncg m ncgs))))  ; No more foos in s
     (let [re   #"(?<foo>foo)"
           s    "prefix foo interstitial text foo suffix"
           ncgs (re-named-groups re)
           m    (re-matcher re s)]
-      (is (= {"foo" "foo"} (re-find-ncg m ncgs)))    ; First foo in s
-      (is (= {"foo" "foo"} (re-find-ncg m ncgs)))    ; Second foo in s
+      (is (= {:start 7  :end 10 "foo" "foo"} (re-find-ncg m ncgs)))    ; First foo in s
+      (is (= {:start 29 :end 32 "foo" "foo"} (re-find-ncg m ncgs)))    ; Second foo in s
       (is (nil?            (re-find-ncg m ncgs)))))  ; No more foos in s
   (testing "Finds with pre-computed ncgs"
     (let [ncgs (re-named-groups apache-re)]
       ; Note: these cases are nonsensical since the names in ncgs don't correlate to the regexes, but we test these cases anyway to ensure reasonable behaviour
-      (is (nil?                                (re-find-ncg #"foo"         ""                                                ncgs)))
-      (is (nil?                                (re-find-ncg #"(?<foo>foo)" ""                                                ncgs)))
-      (is (nil?                                (re-find-ncg #"(?<foo>foo)" "bar"                                             ncgs)))
-      (is (= {}                                (re-find-ncg #"foo"         "foo"                                             ncgs)))
-      (is (= {}                                (re-find-ncg #"foo"         "prefix foo suffix"                               ncgs)))
+      (is (nil?                                                 (re-find-ncg #"foo"         ""                                                ncgs)))
+      (is (nil?                                                 (re-find-ncg #"(?<foo>foo)" ""                                                ncgs)))
+      (is (nil?                                                 (re-find-ncg #"(?<foo>foo)" "bar"                                             ncgs)))
+      (is (= {:start 0 :end 3}                                  (re-find-ncg #"foo"         "foo"                                             ncgs)))
+      (is (= {:start 7 :end 10}                                 (re-find-ncg #"foo"         "prefix foo suffix"                               ncgs)))
       ; These cases make more sense
-      (is (= {"foo" "foo"}                     (re-find-ncg #"(?<foo>foo)" "foo"                                             #{"foo"})))
-      (is (nil?                                (re-find-ncg apache-re      "Mozilla"                                         ncgs)))
-      (is (= {"name" "Apache"}                 (re-find-ncg apache-re      "Apache"                                          ncgs)))
-      (is (= {"name" "apache"}                 (re-find-ncg apache-re      "apache"                                          ncgs)))
-      (is (= {"name" "Apache" "version" "2.0"} (re-find-ncg apache-re      "Apache 2.0"                                      ncgs)))
-      (is (= {"name" "Apache" "version" "1"}   (re-find-ncg apache-re      "Apache 1"                                        ncgs)))
-      (is (= {"name" "Apache" "version" "2"}   (re-find-ncg apache-re      "Apache Software License Version 2"               ncgs)))
-      (is (= {"name" "Apache" "version" "2"}   (re-find-ncg apache-re      "prefix Apache Software License Version 2 suffix" ncgs))))))
+      (is (= {:start 0 :end 3  "foo" "foo"}                     (re-find-ncg #"(?<foo>foo)" "foo"                                             #{"foo"})))
+      (is (nil?                                                 (re-find-ncg apache-re      "Mozilla"                                         ncgs)))
+      (is (= {:start 0 :end 6  "name" "Apache"}                 (re-find-ncg apache-re      "Apache"                                          ncgs)))
+      (is (= {:start 0 :end 6  "name" "apache"}                 (re-find-ncg apache-re      "apache"                                          ncgs)))
+      (is (= {:start 0 :end 10 "name" "Apache" "version" "2.0"} (re-find-ncg apache-re      "Apache 2.0"                                      ncgs)))
+      (is (= {:start 0 :end 8  "name" "Apache" "version" "1"}   (re-find-ncg apache-re      "Apache 1"                                        ncgs)))
+      (is (= {:start 0 :end 33 "name" "Apache" "version" "2"}   (re-find-ncg apache-re      "Apache Software License Version 2"               ncgs)))
+      (is (= {:start 7 :end 40 "name" "Apache" "version" "2"}   (re-find-ncg apache-re      "prefix Apache Software License Version 2 suffix" ncgs))))))
 
 (deftest re-seq-ncg-test
   (testing "Nil regexes and/or input strings"
@@ -155,47 +155,47 @@
     (is (nil? (re-seq-ncg #"(?<foo>foo)" "")))
     (is (nil? (re-seq-ncg apache-re      "Mozilla"))))
   (testing "Matching seqs that don't have named-capturing groups"
-    (is (= '({})    (re-seq-ncg #".*"  "")))
-    (is (= '({})    (re-seq-ncg #"foo" "foo")))
-    (is (= '({} {}) (re-seq-ncg #"foo" "foofoo"))))
+    (is (= '({:start 0 :end 0})                                    (re-seq-ncg #".*"  "")))
+    (is (= '({:start 0 :end 3})                                    (re-seq-ncg #"foo" "foo")))
+    (is (= '({:start 0 :end 3} {:start 3 :end 6})                  (re-seq-ncg #"foo" "foofoo"))))
   (testing "Matching seqs that do have named-capturing groups, but they don't have values in the matched text"
-    (is (= '({} {}) (re-seq-ncg #"(?<foo>foo)?.*" "bar"))))  ; Note: .* matches twice here - compare to (re-seq #".*" "bar")
+    (is (= '({:start 0 :end 3} {:start 3 :end 3})                  (re-seq-ncg #"(?<foo>foo)?.*" "bar"))))  ; Note: .* matches twice here - compare to (re-seq #".*" "bar")
   (testing "Matching seqs that do have named-capturing groups, and some or all of them have values"
-    (is (= '({"foo" "foo"})                       (re-seq-ncg #"(?<foo>foo)"    "foo")))
-    (is (= '({"foo" "foo"})                       (re-seq-ncg #"(?<foo>foo)"    "prefix foo suffix")))
-    (is (= '({"content" "foobar"} {"content" ""}) (re-seq-ncg #"(?<content>.*)" "foobar")))  ; Note: .* matches twice here - compare to (re-seq #".*" "foobar")
-    (is (= '({"name" "Apache"})                   (re-seq-ncg apache-re         "Apache")))
-    (is (= '({"name" "apache"})                   (re-seq-ncg apache-re         "apache")))
-    (is (= '({"name" "Apache" "version" "2.0"})   (re-seq-ncg apache-re         "Apache 2.0")))
-    (is (= '({"name" "Apache" "version" "1"})     (re-seq-ncg apache-re         "Apache 1")))
-    (is (= '({"name" "Apache" "version" "2"})     (re-seq-ncg apache-re         "Apache Software License Version 2")))
-    (is (= '({"name" "Apache" "version" "2"})     (re-seq-ncg apache-re         "prefix Apache Software License Version 2 suffix"))))
+    (is (= '({:start 0 :end 3  "foo" "foo"})                       (re-seq-ncg #"(?<foo>foo)"    "foo")))
+    (is (= '({:start 7 :end 10 "foo" "foo"})                       (re-seq-ncg #"(?<foo>foo)"    "prefix foo suffix")))
+    (is (= '({:start 0 :end 6  "content" "foobar"} {:start 6 :end 6 "content" ""}) (re-seq-ncg #"(?<content>.*)" "foobar")))  ; Note: .* matches twice here - compare to (re-seq #".*" "foobar")
+    (is (= '({:start 0 :end 6  "name" "Apache"})                   (re-seq-ncg apache-re         "Apache")))
+    (is (= '({:start 0 :end 6  "name" "apache"})                   (re-seq-ncg apache-re         "apache")))
+    (is (= '({:start 0 :end 10 "name" "Apache" "version" "2.0"})   (re-seq-ncg apache-re         "Apache 2.0")))
+    (is (= '({:start 0 :end 8  "name" "Apache" "version" "1"})     (re-seq-ncg apache-re         "Apache 1")))
+    (is (= '({:start 0 :end 33 "name" "Apache" "version" "2"})     (re-seq-ncg apache-re         "Apache Software License Version 2")))
+    (is (= '({:start 7 :end 40 "name" "Apache" "version" "2"})     (re-seq-ncg apache-re         "prefix Apache Software License Version 2 suffix"))))
   (testing "Matching seqs with multiple matches"
-    (is (= '({"foo" "foo"} {"foo" "foo"})
-           (re-seq-ncg #"(?<foo>foo)"    "foofoo")))
-    (is (= '({"foo" "foo"} {"foo" "foo"})
-           (re-seq-ncg #"(?<foo>foo)"    "prefix foo interstitial text foo suffix")))
-    (is (= '({"name" "Apache"} {"name" "apache"})
-           (re-seq-ncg apache-re         "Apacheapache")))
-    (is (= '({"name" "apache" "version" "2.0"} {"name" "Apache" "version" "2.0"})
-           (re-seq-ncg apache-re         "apache 2.0 Apache 2.0")))
-    (is (= '({"name" "Apache" "version" "1"} {"name" "Apache" "version" "2.0"})
-           (re-seq-ncg apache-re         "prefix Apache 1 interstitial text Apache Software License Version 2.0 suffix"))))
+    (is (= '({:start 0 :end 3  "foo" "foo"} {:start 3 :end 6 "foo" "foo"})
+           (re-seq-ncg #"(?<foo>foo)" "foofoo")))
+    (is (= '({:start 7 :end 10 "foo" "foo"} {:start 29 :end 32 "foo" "foo"})
+           (re-seq-ncg #"(?<foo>foo)" "prefix foo interstitial text foo suffix")))
+    (is (= '({:start 0 :end 6  "name" "Apache"} {:start 6 :end 12 "name" "apache"})
+           (re-seq-ncg apache-re      "Apacheapache")))
+    (is (= '({:start 0 :end 10 "name" "apache" "version" "2.0"} {:start 11 :end 21 "name" "Apache" "version" "2.0"})
+           (re-seq-ncg apache-re      "apache 2.0 Apache 2.0")))
+    (is (= '({:start 7 :end 15 "name" "Apache" "version" "1"} {:start 34 :end 69 "name" "Apache" "version" "2.0"})
+           (re-seq-ncg apache-re      "prefix Apache 1 interstitial text Apache Software License Version 2.0 suffix"))))
   (testing "Matching seqs with pre-computed ncgs"
     (let [ncgs (re-named-groups apache-re)]
       ; Note: these cases are nonsensical since the names in ncgs don't correlate to the regexes, but we test these cases anyway to ensure reasonable behaviour
-      (is (nil?                                   (re-seq-ncg #"foo"         ""                                                ncgs)))
-      (is (nil?                                   (re-seq-ncg #"(?<foo>foo)" ""                                                ncgs)))
-      (is (nil?                                   (re-seq-ncg #"(?<foo>foo)" "bar"                                             ncgs)))
-      (is (= '({})                                (re-seq-ncg #"foo"         "foo"                                             ncgs)))
-      (is (= '({})                                (re-seq-ncg #"foo"         "prefix foo suffix"                               ncgs)))
+      (is (nil?                                                    (re-seq-ncg #"foo"         ""                                                ncgs)))
+      (is (nil?                                                    (re-seq-ncg #"(?<foo>foo)" ""                                                ncgs)))
+      (is (nil?                                                    (re-seq-ncg #"(?<foo>foo)" "bar"                                             ncgs)))
+      (is (= '({:start 0 :end 3})                                  (re-seq-ncg #"foo"         "foo"                                             ncgs)))
+      (is (= '({:start 7 :end 10})                                 (re-seq-ncg #"foo"         "prefix foo suffix"                               ncgs)))
       ; These cases make more sense
-      (is (= '({"foo" "foo"})                     (re-seq-ncg #"(?<foo>foo)" "foo"                                             #{"foo"})))
-      (is (nil?                                   (re-seq-ncg apache-re      "Mozilla"                                         ncgs)))
-      (is (= '({"name" "Apache"})                 (re-seq-ncg apache-re      "Apache"                                          ncgs)))
-      (is (= '({"name" "apache"})                 (re-seq-ncg apache-re      "apache"                                          ncgs)))
-      (is (= '({"name" "Apache" "version" "2.0"}) (re-seq-ncg apache-re      "Apache 2.0"                                      ncgs)))
-      (is (= '({"name" "Apache" "version" "1"})   (re-seq-ncg apache-re      "Apache 1"                                        ncgs)))
-      (is (= '({"name" "Apache" "version" "2"})   (re-seq-ncg apache-re      "Apache Software License Version 2"               ncgs)))
-      (is (= '({"name" "Apache" "version" "2"})   (re-seq-ncg apache-re      "prefix Apache Software License Version 2 suffix" ncgs))))))
+      (is (= '({:start 0 :end 3  "foo" "foo"})                     (re-seq-ncg #"(?<foo>foo)" "foo"                                             #{"foo"})))
+      (is (nil?                                                    (re-seq-ncg apache-re      "Mozilla"                                         ncgs)))
+      (is (= '({:start 0 :end 6  "name" "Apache"})                 (re-seq-ncg apache-re      "Apache"                                          ncgs)))
+      (is (= '({:start 0 :end 6  "name" "apache"})                 (re-seq-ncg apache-re      "apache"                                          ncgs)))
+      (is (= '({:start 0 :end 10 "name" "Apache" "version" "2.0"}) (re-seq-ncg apache-re      "Apache 2.0"                                      ncgs)))
+      (is (= '({:start 0 :end 8  "name" "Apache" "version" "1"})   (re-seq-ncg apache-re      "Apache 1"                                        ncgs)))
+      (is (= '({:start 0 :end 33 "name" "Apache" "version" "2"})   (re-seq-ncg apache-re      "Apache Software License Version 2"               ncgs)))
+      (is (= '({:start 7 :end 40 "name" "Apache" "version" "2"})   (re-seq-ncg apache-re      "prefix Apache Software License Version 2 suffix" ncgs))))))
 
