@@ -23,8 +23,7 @@ Because that library [monkey patches core Clojure](https://github.com/rufoa/name
 #### Clojure CLI
 
 ```shell
-$ # Where #.#.# is replaced with an actual version number (see badge above)
-$ clj -Sdeps '{:deps {com.github.pmonks/rencg {:mvn/version "#.#.#"}}}'
+$ clj -Sdeps '{:deps {com.github.pmonks/rencg {:mvn/version "RELEASE"}}}'
 ```
 
 #### Leiningen
