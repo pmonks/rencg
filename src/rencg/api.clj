@@ -18,26 +18,10 @@
 
 (ns rencg.api)
 
-(defmulti re-named-groups
-  "Returns the names of all of the named-capturing groups in the
-  given regular expression (or matcher), as a set of Strings.
-
-  Note: JDK-agnostic workaround for https://bugs.openjdk.org/browse/JDK-7032377
-  (which is fixed in JDK 20)"
-  {:arglists '([re] [m])}
-  (fn [arg] (type arg)))
-
-(defmethod re-named-groups nil
-  [_]
-  nil)
-
-(defmethod re-named-groups java.util.regex.Pattern
-  [^java.util.regex.Pattern re]
-  (set (map second (re-seq #"\(\?<([a-zA-Z][a-zA-Z0-9]*)>" (str re)))))
-
-(defmethod re-named-groups java.util.regex.Matcher
-  [^java.util.regex.Matcher m]
-  (re-named-groups (.pattern m)))
+; Dynamically load the re-named-groups implementation
+(if (contains? (set (map #(.getName ^java.lang.reflect.Method %) (.getMethods java.util.regex.Pattern))) "namedGroups")
+  (load "native")
+  (load "non_native"))
 
 (defn re-groups-ncg
   "Equivalent to clojure.core/re-groups, but instead of returning
