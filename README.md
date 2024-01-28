@@ -8,7 +8,7 @@
 
 # rencg
 
-A micro-library for Clojure that provides first class support for accessing the values of [named-capturing groups](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html#groupname) in regular expressions. It has no dependencies, other than on Clojure and the JVM versions it supports, and is [only around 100 lines of code](https://github.com/pmonks/rencg/blob/release/src/rencg/api.clj).
+A micro-library for Clojure that provides first class support for accessing the values of [named-capturing groups](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html#groupname) in regular expressions. It has no dependencies, other than on Clojure and the JVM versions it supports, and is [only around 100 lines of code](https://github.com/pmonks/rencg/blob/release/src/rencg/).
 
 #### Does `rencg` work on older JVMs that don't have the [`.namedGroups()` API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html#namedGroups())?
 
