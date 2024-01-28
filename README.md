@@ -12,7 +12,7 @@ A micro-library for Clojure that provides first class support for accessing the 
 
 #### Does `rencg` work on older JVMs that don't have the [`.namedGroups()` API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html#namedGroups())?
 
-Yes. On older (pre v20) JVMs, `rencg` [gracefully degrades to manually parsing regexes to determine the named capturing groups](https://github.com/pmonks/rencg/blob/release/src/rencg/non_native.clj).
+Yes. On older (pre v20) JVMs, `rencg` [gracefully degrades by manually parsing regexes to determine the named capturing groups](https://github.com/pmonks/rencg/blob/release/src/rencg/non_native.clj).
 
 #### Why not [rufoa/named-re](https://github.com/rufoa/named-re)?
 
