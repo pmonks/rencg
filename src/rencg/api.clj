@@ -18,7 +18,7 @@
 
 (ns rencg.api)
 
-; Dynamically load the re-named-groups implementation
+; Dynamically load the re-named-groups implementation, based on JVM capabilities
 (if (contains? (set (map #(.getName ^java.lang.reflect.Method %) (.getMethods java.util.regex.Pattern))) "namedGroups")
   (load "native")
   (load "non_native"))
