@@ -33,4 +33,5 @@
                                            :connection           "scm:git:git://github.com/pmonks/rencg.git"
                                            :developer-connection "scm:git:ssh://git@github.com/pmonks/rencg.git"
                                            :tag                  (tc/git-tag-or-hash)}
-                        :issue-management {:system "github" :url "https://github.com/pmonks/rencg/issues"}}))
+                        :issue-management {:system "github" :url "https://github.com/pmonks/rencg/issues"}}
+         :eastwood     {:exclude-linters [:no-ns-form-found]}))
