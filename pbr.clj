@@ -22,6 +22,7 @@
   (assoc opts
          :lib          'com.github.pmonks/rencg
          :version      (pbr/calculate-version 1 0)
+         :prod-branch  "release"
          :write-pom    true
          :validate-pom true
          :pom          {:description      "A micro-library for Clojure that provides first class support for named-capturing groups in regular expressions."
@@ -32,4 +33,5 @@
                                            :connection           "scm:git:git://github.com/pmonks/rencg.git"
                                            :developer-connection "scm:git:ssh://git@github.com/pmonks/rencg.git"
                                            :tag                  (tc/git-tag-or-hash)}
-                        :issue-management {:system "github" :url "https://github.com/pmonks/rencg/issues"}}))
+                        :issue-management {:system "github" :url "https://github.com/pmonks/rencg/issues"}}
+         :eastwood     {:exclude-linters [:no-ns-form-found]}))
