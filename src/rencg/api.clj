@@ -41,10 +41,10 @@
   ([^java.util.regex.Matcher m ncgs]
    (let [ncgs (or ncgs (re-named-groups m))]
      (loop [result {}
-            f      (first ncgs)
+            f      ^String (first ncgs)
             r      (rest ncgs)]
        (if f
-         (let [v (try (.group m ^String f) (catch java.lang.IllegalArgumentException _ nil))]
+         (let [v (try (.group m f) (catch java.lang.IllegalArgumentException _ nil))]
            (recur (merge result
                          {:start (.start m)
                           :end   (.end   m)}

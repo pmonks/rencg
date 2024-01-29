@@ -57,13 +57,15 @@
   (testing "Matches that do have named-capturing groups, but they don't have values in the matched text"
     (is (= {:start 0 :end 3} (re-matches-ncg #"(?<foo>foo)?.*" "bar"))))
   (testing "Matches that do have named-capturing groups, and some or all of them have values"
-    (is (= {:start 0 :end 3  "foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)"    "foo")))
-    (is (= {:start 0 :end 6  "content" "foobar"}              (re-matches-ncg #"(?<content>.*)" "foobar")))
-    (is (= {:start 0 :end 6  "name" "Apache"}                 (re-matches-ncg apache-re         "Apache")))
-    (is (= {:start 0 :end 6  "name" "apache"}                 (re-matches-ncg apache-re         "apache")))
-    (is (= {:start 0 :end 10 "name" "Apache" "version" "2.0"} (re-matches-ncg apache-re         "Apache 2.0")))
-    (is (= {:start 0 :end 8  "name" "Apache" "version" "1"}   (re-matches-ncg apache-re         "Apache 1")))
-    (is (= {:start 0 :end 33 "name" "Apache" "version" "2"}   (re-matches-ncg apache-re         "Apache Software License Version 2"))))
+    (is (= {:start 0 :end  3 "foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)"                "foo")))
+    (is (= {:start 0 :end  6 "foo" "foo"}                     (re-matches-ncg #"(?<foo>foo)+"               "foofoo")))                    ; Note: start and end indexes are for the entire match, not the named groups
+    (is (= {:start 0 :end 24 "foo" "foo" "bar" "bar"}         (re-matches-ncg #"((?<foo>foo)|(?<bar>bar))+" "foobarfoobarfoobarfoobar")))  ; Note: Java only matches a single value for a NCG, even if the named group is found multiple times
+    (is (= {:start 0 :end  6 "content" "foobar"}              (re-matches-ncg #"(?<content>.*)"             "foobar")))
+    (is (= {:start 0 :end  6 "name" "Apache"}                 (re-matches-ncg apache-re                     "Apache")))
+    (is (= {:start 0 :end  6 "name" "apache"}                 (re-matches-ncg apache-re                     "apache")))
+    (is (= {:start 0 :end 10 "name" "Apache" "version" "2.0"} (re-matches-ncg apache-re                     "Apache 2.0")))
+    (is (= {:start 0 :end  8 "name" "Apache" "version" "1"}   (re-matches-ncg apache-re                     "Apache 1")))
+    (is (= {:start 0 :end 33 "name" "Apache" "version" "2"}   (re-matches-ncg apache-re                     "Apache Software License Version 2"))))
   (testing "Matches with pre-computed ncgs"
     (let [ncgs (re-named-groups apache-re)]
       ; Note: these cases are nonsensical since the names in ncgs don't correlate to the regexes, but we test these cases anyway to ensure reasonable behaviour
