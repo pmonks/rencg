@@ -66,7 +66,7 @@ $ deps-try com.github.pmonks/rencg
 (rencg/re-matches-ncg #"((?<foo>foo)|(?<bar>bar))+" "foobarfoobarfoobarfoobar")
 ;=> {:start 0, :end 24, "foo" "foo", "bar" "bar"}
 
-; This example also shows the value of using named capturing groups instead of numbered
+; This last example also shows the value of using named capturing groups instead of numbered
 ; capturing groups (the latter being brittle, since non-named groups conflate grouping and
 ; capture)
 
