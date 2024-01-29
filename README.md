@@ -58,19 +58,21 @@ $ deps-try com.github.pmonks/rencg
 (rencg/re-matches-ncg #"(?<foo>foo)+" "foofoo")
 ;=> {:start 0, :end 6, "foo" "foo"}
 
-; Note: Java named capturing groups only capture a single value from the input, even if the group is
-; present multiple times. Also, the start and end indexes are for the entire match, not where the
-; named capturing groups are found (obviously, since there may be many named capturing groups all of
-; which have different start and end indexes).
+; Note: Java named capturing groups only capture a single value from the input, even if the
+; group is present multiple times. Also, the start and end indexes are for the entire match,
+; not where the named capturing groups are found (obviously, since there may be many named
+; capturing groups all of which have different start and end indexes).
 
 (rencg/re-matches-ncg #"((?<foo>foo)|(?<bar>bar))+" "foobarfoobarfoobarfoobar")
 ;=> {:start 0, :end 24, "foo" "foo", "bar" "bar"}
 
-; This example also shows the value of using named capturing groups instead of numbered capturing
-; groups (the latter being brittle, since non-named groups conflate grouping and capture)
+; This example also shows the value of using named capturing groups instead of numbered
+; capturing groups (the latter being brittle, since non-named groups conflate grouping and
+; capture)
 
 
-;; re-seq-ncg - for when you want all matches of a named capturing group that exist within the input
+;; re-seq-ncg - for when you want all matches of a named capturing group that exist within
+;;              the input
 (rencg/re-seq-ncg #"((?<foo>foo)|(?<bar>bar))" "foobarfoobarfoobarfoobar")
 ;=> ({:start 0, :end 3, "foo" "foo"}
 ;    {:start 3, :end 6, "bar" "bar"}
@@ -82,8 +84,8 @@ $ deps-try com.github.pmonks/rencg
 ;    {:start 21, :end 24, "bar" "bar"})
 
 
-;; re-find-ncg - for when you want to extract something specific from the input, using standard
-;;               Clojure map lookups
+;; re-find-ncg - for when you want to extract something specific from the input, using
+;;               standard Clojure map lookups
 (get (rencg/re-find-ncg #"(?i)(?<foo>foo)" "THIS IS SOME TEXT WITH FOO IN IT") "foo")
 ;=> "FOO"
 ```
