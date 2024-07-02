@@ -3,158 +3,159 @@ Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.pom from clojars
 Downloading: org/owasp/dependency-check-core/9.0.8/dependency-check-core-9.0.8.pom from central
 Downloading: org/slf4j/slf4j-simple/2.0.10/slf4j-simple-2.0.10.pom from central
 Downloading: org/owasp/dependency-check-parent/9.0.8/dependency-check-parent-9.0.8.pom from central
-Downloading: clansi/clansi/1.0.0/clansi-1.0.0.pom from clojars
 Downloading: com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind-2.16.1.pom from central
-Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.pom from clojars
-Downloading: com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.pom from central
 Downloading: com/fasterxml/jackson/jackson-base/2.16.1/jackson-base-2.16.1.pom from central
 Downloading: rm-hull/table/0.7.1/table-0.7.1.pom from clojars
-Downloading: com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.pom from central
 Downloading: org/junit/junit-bom/5.9.2/junit-bom-5.9.2.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.pom from central
+Downloading: com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.pom from central
+Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.pom from clojars
 Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.16.1/jackson-module-afterburner-2.16.1.pom from central
-Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.16.1/jackson-modules-base-2.16.1.pom from central
+Downloading: clansi/clansi/1.0.0/clansi-1.0.0.pom from clojars
 Downloading: org/apache/maven/resolver/maven-resolver-transport-http/1.9.18/maven-resolver-transport-http-1.9.18.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver/1.9.18/maven-resolver-1.9.18.pom from central
 Downloading: org/yaml/snakeyaml/2.2/snakeyaml-2.2.pom from central
-Downloading: org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.pom from central
-Downloading: org/apache/maven/maven/3.9.6/maven-3.9.6.pom from central
+Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.16.1/jackson-modules-base-2.16.1.pom from central
 Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.pom from central
-Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.pom from central
 Downloading: org/eclipse/jetty/jetty-core/12.0.5/jetty-core-12.0.5.pom from central
+Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.pom from central
+Downloading: org/eclipse/jetty/jetty-project/12.0.5/jetty-project-12.0.5.pom from central
+Downloading: org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.pom from central
-Downloading: org/eclipse/jetty/jetty-project/12.0.5/jetty-project-12.0.5.pom from central
-Downloading: org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.pom from central
 Downloading: org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.pom from central
-Downloading: org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom from central
-Downloading: io/github/jeremylong/open-vulnerability-clients/5.1.1/open-vulnerability-clients-5.1.1.pom from central
+Downloading: org/apache/maven/maven/3.9.6/maven-3.9.6.pom from central
 Downloading: com/fasterxml/jackson/jackson-bom/2.15.3/jackson-bom-2.15.3.pom from central
-Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.pom from central
-Downloading: org/apache/commons/commons-jcs3-core/3.2/commons-jcs3-core-3.2.pom from central
-Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.pom from central
 Downloading: com/fasterxml/jackson/jackson-parent/2.15/jackson-parent-2.15.pom from central
-Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.pom from central
 Downloading: com/fasterxml/oss-parent/50/oss-parent-50.pom from central
-Downloading: org/apache/commons/commons-jcs3/3.2/commons-jcs3-3.2.pom from central
+Downloading: org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom from central
+Downloading: org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.pom from central
+Downloading: org/infinispan/infinispan-bom/11.0.18.Final/infinispan-bom-11.0.18.Final.pom from central
+Downloading: org/infinispan/infinispan-build-configuration-parent/11.0.18.Final/infinispan-build-configuration-parent-11.0.18.Final.pom from central
+Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.pom from central
+Downloading: io/github/jeremylong/open-vulnerability-clients/5.1.1/open-vulnerability-clients-5.1.1.pom from central
+Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.pom from central
+Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.pom from central
+Downloading: org/apache/commons/commons-jcs3-core/3.2/commons-jcs3-core-3.2.pom from central
 Downloading: com/github/package-url/packageurl-java/1.4.1/packageurl-java-1.4.1.pom from central
 Downloading: us/springett/cpe-parser/2.0.3/cpe-parser-2.0.3.pom from central
+Downloading: org/apache/commons/commons-jcs3/3.2/commons-jcs3-3.2.pom from central
+Downloading: org/ow2/asm/asm-bom/9.6/asm-bom-9.6.pom from central
 Downloading: org/apache/commons/commons-parent/58/commons-parent-58.pom from central
 Downloading: org/semver4j/semver4j/5.2.2/semver4j-5.2.2.pom from central
-Downloading: org/infinispan/infinispan-bom/11.0.18.Final/infinispan-bom-11.0.18.Final.pom from central
 Downloading: org/owasp/dependency-check-utils/9.0.8/dependency-check-utils-9.0.8.pom from central
 Downloading: org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.pom from central
-Downloading: org/infinispan/infinispan-build-configuration-parent/11.0.18.Final/infinispan-build-configuration-parent-11.0.18.Final.pom from central
-Downloading: org/apache/commons/commons-parent/48/commons-parent-48.pom from central
-Downloading: org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.pom from central
-Downloading: org/ow2/asm/asm-bom/9.6/asm-bom-9.6.pom from central
-Downloading: commons-io/commons-io/2.15.0/commons-io-2.15.0.pom from central
 Downloading: org/testcontainers/testcontainers-bom/1.19.3/testcontainers-bom-1.19.3.pom from central
+Downloading: org/apache/commons/commons-parent/48/commons-parent-48.pom from central
+Downloading: commons-io/commons-io/2.15.0/commons-io-2.15.0.pom from central
+Downloading: org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.pom from central
 Downloading: org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.pom from central
-Downloading: org/apache/lucene/lucene-core/8.11.2/lucene-core-8.11.2.pom from central
-Downloading: org/apache/commons/commons-dbcp2/2.11.0/commons-dbcp2-2.11.0.pom from central
-Downloading: org/apache/lucene/lucene-parent/8.11.2/lucene-parent-8.11.2.pom from central
 Downloading: org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.pom from central
+Downloading: org/apache/commons/commons-dbcp2/2.11.0/commons-dbcp2-2.11.0.pom from central
+Downloading: org/apache/lucene/lucene-core/8.11.2/lucene-core-8.11.2.pom from central
 Downloading: org/apache/lucene/lucene-analyzers-common/8.11.2/lucene-analyzers-common-8.11.2.pom from central
+Downloading: org/apache/lucene/lucene-parent/8.11.2/lucene-parent-8.11.2.pom from central
 Downloading: org/apache/lucene/lucene-queryparser/8.11.2/lucene-queryparser-8.11.2.pom from central
 Downloading: org/apache/lucene/lucene-solr-grandparent/8.11.2/lucene-solr-grandparent-8.11.2.pom from central
 Downloading: org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.pom from central
 Downloading: org/apache/velocity/velocity-engine-parent/2.3/velocity-engine-parent-2.3.pom from central
 Downloading: org/apache/velocity/velocity-master/4/velocity-master-4.pom from central
 Downloading: com/h2database/h2/2.1.214/h2-2.1.214.pom from central
+Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.pom from central
 Downloading: org/jsoup/jsoup/1.16.2/jsoup-1.16.2.pom from central
 Downloading: com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.pom from central
-Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.pom from central
+Downloading: org/glassfish/json/1.1.4/json-1.1.4.pom from central
 Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.16.0/jackson-module-blackbird-2.16.0.pom from central
 Downloading: com/fasterxml/jackson/module/jackson-modules-java8/2.16.0/jackson-modules-java8-2.16.0.pom from central
-Downloading: org/glassfish/json/1.1.4/json-1.1.4.pom from central
+Downloading: com/fasterxml/jackson/jackson-base/2.16.0/jackson-base-2.16.0.pom from central
 Downloading: com/fasterxml/jackson/module/jackson-modules-base/2.16.0/jackson-modules-base-2.16.0.pom from central
 Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.pom from central
-Downloading: com/fasterxml/jackson/jackson-base/2.16.0/jackson-base-2.16.0.pom from central
-Downloading: com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.16.0/jackson-dataformats-text-2.16.0.pom from central
 Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.pom from central
-Downloading: com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.pom from central
-Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.pom from central
 Downloading: com/h3xstream/retirejs/retirejs-root-pom/3.0.4/retirejs-root-pom-3.0.4.pom from central
-Downloading: com/google/guava/guava-parent/32.1.3-jre/guava-parent-32.1.3-jre.pom from central
+Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.pom from central
+Downloading: com/fasterxml/jackson/dataformat/jackson-dataformats-text/2.16.0/jackson-dataformats-text-2.16.0.pom from central
+Downloading: com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.pom from central
 Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.pom from central
 Downloading: org/sonatype/ossindex/ossindex-service/1.8.2/ossindex-service-1.8.2.pom from central
-Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.pom from central
-Downloading: org/sonatype/buildsupport/public-parent/28/public-parent-28.pom from central
+Downloading: com/google/guava/guava-parent/32.1.3-jre/guava-parent-32.1.3-jre.pom from central
 Downloading: commons-validator/commons-validator/1.7/commons-validator-1.7.pom from central
+Downloading: org/sonatype/buildsupport/public-parent/28/public-parent-28.pom from central
+Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.pom from central
 Downloading: org/sonatype/buildsupport/buildsupport/28/buildsupport-28.pom from central
-Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.pom from central
 Downloading: org/apache/commons/commons-parent/51/commons-parent-51.pom from central
-Downloading: org/eclipse/packager/packager/0.19.0/packager-0.19.0.pom from central
+Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.pom from central
 Downloading: org/sonatype/ossindex/ossindex-service-bom/1.8.2/ossindex-service-bom-1.8.2.pom from central
+Downloading: org/eclipse/packager/packager/0.19.0/packager-0.19.0.pom from central
 Downloading: org/junit/junit-bom/5.8.2/junit-bom-5.8.2.pom from central
-Downloading: org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.pom from central
 Downloading: commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.pom from central
+Downloading: org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.pom from central
+Downloading: org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.pom from central
 Downloading: org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.pom from central
 Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.pom from central
-Downloading: org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.pom from central
-Downloading: org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.pom from central
-Downloading: org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.pom from central
-Downloading: org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.pom from central
 Downloading: org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.pom from central
-Downloading: org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.pom from central
+Downloading: org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.pom from central
+Downloading: org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.pom from central
+Downloading: org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.pom from central
 Downloading: org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.pom from central
-Downloading: org/eclipse/sisu/sisu-inject/0.9.0.M2/sisu-inject-0.9.0.M2.pom from central
+Downloading: org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.pom from central
 Downloading: com/google/inject/guice/5.1.0/guice-5.1.0.pom from central
-Downloading: com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom from central
 Downloading: org/eclipse/sisu/sisu-plexus/0.9.0.M2/sisu-plexus-0.9.0.M2.pom from central
-Downloading: com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom from central
-Downloading: org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.pom from central
+Downloading: org/eclipse/sisu/sisu-inject/0.9.0.M2/sisu-inject-0.9.0.M2.pom from central
 Downloading: com/google/inject/guice-parent/5.1.0/guice-parent-5.1.0.pom from central
-Downloading: org/eclipse/jetty/jetty-alpn-client/12.0.5/jetty-alpn-client-12.0.5.pom from central
-Downloading: org/eclipse/jetty/jetty-http/12.0.5/jetty-http-12.0.5.pom from central
+Downloading: org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.pom from central
+Downloading: com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom from central
+Downloading: com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom from central
 Downloading: org/eclipse/jetty/jetty-io/12.0.5/jetty-io-12.0.5.pom from central
-Downloading: org/eclipse/jetty/jetty-alpn/12.0.5/jetty-alpn-12.0.5.pom from central
-Downloading: org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.pom from central
-Downloading: org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.pom from central
+Downloading: org/eclipse/jetty/jetty-http/12.0.5/jetty-http-12.0.5.pom from central
+Downloading: org/eclipse/jetty/jetty-alpn-client/12.0.5/jetty-alpn-client-12.0.5.pom from central
 Downloading: com/samskivert/jmustache/1.15/jmustache-1.15.pom from central
-Downloading: org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.pom from central
+Downloading: org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.pom from central
 Downloading: org/apache/httpcomponents/client5/httpclient5-parent/5.2.1/httpclient5-parent-5.2.1.pom from central
-Downloading: commons-logging/commons-logging/1.2/commons-logging-1.2.pom from central
-Downloading: org/apache/commons/commons-parent/62/commons-parent-62.pom from central
+Downloading: org/eclipse/jetty/jetty-alpn/12.0.5/jetty-alpn-12.0.5.pom from central
 Downloading: org/apache/httpcomponents/httpcomponents-parent/13/httpcomponents-parent-13.pom from central
-Downloading: org/apache/commons/commons-parent/34/commons-parent-34.pom from central
+Downloading: org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.pom from central
+Downloading: org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.pom from central
+Downloading: commons-logging/commons-logging/1.2/commons-logging-1.2.pom from central
 Downloading: jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.pom from central
+Downloading: org/apache/commons/commons-parent/62/commons-parent-62.pom from central
 Downloading: org/eclipse/ee4j/project/1.0.5/project-1.0.5.pom from central
-Downloading: org/apache/lucene/lucene-queries/8.11.2/lucene-queries-8.11.2.pom from central
-Downloading: org/apache/lucene/lucene-sandbox/8.11.2/lucene-sandbox-8.11.2.pom from central
+Downloading: org/apache/commons/commons-parent/34/commons-parent-34.pom from central
 Downloading: com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.pom from central
+Downloading: org/apache/lucene/lucene-queries/8.11.2/lucene-queries-8.11.2.pom from central
 Downloading: com/esotericsoftware/minlog/1.3.1/minlog-1.3.1.pom from central
-Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.pom from central
 Downloading: org/sonatype/ossindex/ossindex-service-api/1.8.2/ossindex-service-api-1.8.2.pom from central
 Downloading: joda-time/joda-time/2.10.4/joda-time-2.10.4.pom from central
-Downloading: com/github/spullara/mustache/java/mustache.java/0.9.6/mustache.java-0.9.6.pom from central
+Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.pom from central
 Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.pom from central
+Downloading: org/apache/lucene/lucene-sandbox/8.11.2/lucene-sandbox-8.11.2.pom from central
 Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.pom from central
-Downloading: com/google/code/gson/gson-parent/2.9.0/gson-parent-2.9.0.pom from central
+Downloading: com/github/spullara/mustache/java/mustache.java/0.9.6/mustache.java-0.9.6.pom from central
+Downloading: javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom from central
 Downloading: org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0.pom from central
 Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom from central
-Downloading: javax/xml/bind/jaxb-api-parent/2.3.1/jaxb-api-parent-2.3.1.pom from central
+Downloading: com/google/code/gson/gson-parent/2.9.0/gson-parent-2.9.0.pom from central
 Downloading: com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.pom from central
 Downloading: com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.pom from central
 Downloading: com/google/errorprone/error_prone_parent/2.21.1/error_prone_parent-2.21.1.pom from central
-Downloading: org/tukaani/xz/1.9/xz-1.9.pom from central
 Downloading: org/eclipse/packager/packager-core/0.19.0/packager-core-0.19.0.pom from central
-Downloading: org/eclipse/jetty/jetty-util/12.0.5/jetty-util-12.0.5.pom from central
+Downloading: org/tukaani/xz/1.9/xz-1.9.pom from central
 Downloading: org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.pom from central
+Downloading: org/apache/httpcomponents/core5/httpcore5-parent/5.2/httpcore5-parent-5.2.pom from central
+Downloading: org/eclipse/jetty/jetty-util/12.0.5/jetty-util-12.0.5.pom from central
+Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.pom from central
 Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom from central
 Downloading: org/sonatype/goodies/package-url-java/1.1.1/package-url-java-1.1.1.pom from central
-Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.pom from central
-Downloading: org/apache/httpcomponents/core5/httpcore5-parent/5.2/httpcore5-parent-5.2.pom from central
 Downloading: org/sonatype/buildsupport/public-parent/13/public-parent-13.pom from central
-Downloading: org/sonatype/buildsupport/buildsupport/13/buildsupport-13.pom from central
 Downloading: org/bouncycastle/bcprov-jdk18on/1.71/bcprov-jdk18on-1.71.pom from central
 Downloading: org/bouncycastle/bcpg-jdk18on/1.71/bcpg-jdk18on-1.71.pom from central
-Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.16.0/jackson-module-blackbird-2.16.0.jar from central
+Downloading: org/sonatype/buildsupport/buildsupport/13/buildsupport-13.pom from central
 Downloading: joda-time/joda-time/2.10.4/joda-time-2.10.4.jar from central
+Downloading: com/fasterxml/jackson/module/jackson-module-blackbird/2.16.0/jackson-module-blackbird-2.16.0.jar from central
+Downloading: commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar from central
 Downloading: org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar from central
 Downloading: org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar from central
-Downloading: commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar from central
 Downloading: com/google/errorprone/error_prone_annotations/2.21.1/error_prone_annotations-2.21.1.jar from central
+Downloading: commons-validator/commons-validator/1.7/commons-validator-1.7.jar from central
 Downloading: org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar from central
 Downloading: com/esotericsoftware/minlog/1.3.1/minlog-1.3.1.jar from central
 Downloading: org/tukaani/xz/1.9/xz-1.9.jar from central
@@ -163,41 +164,39 @@ Downloading: com/fasterxml/jackson/core/jackson-databind/2.16.1/jackson-databind
 Downloading: com/h3xstream/retirejs/retirejs-core/3.0.4/retirejs-core-3.0.4.jar from central
 Downloading: com/google/inject/guice/5.1.0/guice-5.1.0.jar from central
 Downloading: org/eclipse/jetty/jetty-alpn-client/12.0.5/jetty-alpn-client-12.0.5.jar from central
-Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.jar from central
 Downloading: jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar from central
-Downloading: commons-validator/commons-validator/1.7/commons-validator-1.7.jar from central
+Downloading: org/eclipse/packager/packager-rpm/0.19.0/packager-rpm-0.19.0.jar from central
 Downloading: org/eclipse/jetty/jetty-http/12.0.5/jetty-http-12.0.5.jar from central
 Downloading: org/eclipse/jetty/jetty-util/12.0.5/jetty-util-12.0.5.jar from central
 Downloading: org/apache/commons/commons-dbcp2/2.11.0/commons-dbcp2-2.11.0.jar from central
-Downloading: org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar from central
 Downloading: com/fasterxml/jackson/module/jackson-module-afterburner/2.16.1/jackson-module-afterburner-2.16.1.jar from central
-Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar from central
+Downloading: org/apache/commons/commons-pool2/2.12.0/commons-pool2-2.12.0.jar from central
 Downloading: org/anarres/jdiagnostics/jdiagnostics/1.0.7/jdiagnostics-1.0.7.jar from central
+Downloading: com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.16.0/jackson-dataformat-yaml-2.16.0.jar from central
 Downloading: org/apache/maven/resolver/maven-resolver-transport-http/1.9.18/maven-resolver-transport-http-1.9.18.jar from central
-Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.jar from central
 Downloading: org/apache/lucene/lucene-analyzers-common/8.11.2/lucene-analyzers-common-8.11.2.jar from central
 Downloading: org/apache/maven/maven-model-builder/3.9.6/maven-model-builder-3.9.6.jar from central
+Downloading: com/hankcs/aho-corasick-double-array-trie/1.2.3/aho-corasick-double-array-trie-1.2.3.jar from central
 Downloading: com/h2database/h2/2.1.214/h2-2.1.214.jar from central
-Downloading: clansi/clansi/1.0.0/clansi-1.0.0.jar from clojars
 Downloading: org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar from central
 Downloading: org/eclipse/sisu/org.eclipse.sisu.plexus/0.9.0.M2/org.eclipse.sisu.plexus-0.9.0.M2.jar from central
 Downloading: com/samskivert/jmustache/1.15/jmustache-1.15.jar from central
-Downloading: org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.jar from central
 Downloading: commons-io/commons-io/2.15.0/commons-io-2.15.0.jar from central
 Downloading: com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar from central
+Downloading: org/apache/maven/maven-settings-builder/3.9.6/maven-settings-builder-3.9.6.jar from central
 Downloading: com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar from central
-Downloading: org/owasp/dependency-check-core/9.0.8/dependency-check-core-9.0.8.jar from central
-Downloading: rm-hull/table/0.7.1/table-0.7.1.jar from clojars
+Downloading: clansi/clansi/1.0.0/clansi-1.0.0.jar from clojars
 Downloading: com/github/spullara/mustache/java/compiler/0.9.6/compiler-0.9.6.jar from central
+Downloading: org/owasp/dependency-check-core/9.0.8/dependency-check-core-9.0.8.jar from central
 Downloading: org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar from central
-Downloading: org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar from central
 Downloading: com/fasterxml/jackson/core/jackson-core/2.16.1/jackson-core-2.16.1.jar from central
+Downloading: org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar from central
 Downloading: org/apache/maven/maven-settings/3.9.6/maven-settings-3.9.6.jar from central
 Downloading: org/apache/commons/commons-jcs3-core/3.2/commons-jcs3-core-3.2.jar from central
 Downloading: org/owasp/dependency-check-utils/9.0.8/dependency-check-utils-9.0.8.jar from central
+Downloading: rm-hull/table/0.7.1/table-0.7.1.jar from clojars
 Downloading: org/apache/lucene/lucene-core/8.11.2/lucene-core-8.11.2.jar from central
 Downloading: org/semver4j/semver4j/5.2.2/semver4j-5.2.2.jar from central
-Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.jar from clojars
 Downloading: org/slf4j/slf4j-simple/2.0.10/slf4j-simple-2.0.10.jar from central
 Downloading: org/apache/maven/maven-core/3.9.6/maven-core-3.9.6.jar from central
 Downloading: org/apache/lucene/lucene-queryparser/8.11.2/lucene-queryparser-8.11.2.jar from central
@@ -205,299 +204,537 @@ Downloading: org/bouncycastle/bcprov-jdk18on/1.71/bcprov-jdk18on-1.71.jar from c
 Downloading: org/eclipse/packager/packager-core/0.19.0/packager-core-0.19.0.jar from central
 Downloading: com/fasterxml/jackson/core/jackson-annotations/2.16.1/jackson-annotations-2.16.1.jar from central
 Downloading: org/apache/maven/resolver/maven-resolver-api/1.9.18/maven-resolver-api-1.9.18.jar from central
+Downloading: trptcolin/versioneer/0.2.0/versioneer-0.2.0.jar from clojars
 Downloading: org/apache/maven/maven-resolver-provider/3.9.6/maven-resolver-provider-3.9.6.jar from central
 Downloading: org/apache/commons/commons-text/1.11.0/commons-text-1.11.0.jar from central
 Downloading: us/springett/cpe-parser/2.0.3/cpe-parser-2.0.3.jar from central
 Downloading: org/apache/lucene/lucene-queries/8.11.2/lucene-queries-8.11.2.jar from central
 Downloading: commons-logging/commons-logging/1.2/commons-logging-1.2.jar from central
 Downloading: com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar from central
-Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar from central
 Downloading: com/google/guava/guava/32.1.3-jre/guava-32.1.3-jre.jar from central
+Downloading: org/apache/maven/resolver/maven-resolver-spi/1.9.18/maven-resolver-spi-1.9.18.jar from central
 Downloading: org/sonatype/ossindex/ossindex-service-api/1.8.2/ossindex-service-api-1.8.2.jar from central
 Downloading: com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar from central
 Downloading: org/codehaus/plexus/plexus-classworlds/2.7.0/plexus-classworlds-2.7.0.jar from central
 Downloading: io/github/jeremylong/open-vulnerability-clients/5.1.1/open-vulnerability-clients-5.1.1.jar from central
 Downloading: org/apache/lucene/lucene-sandbox/8.11.2/lucene-sandbox-8.11.2.jar from central
 Downloading: org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar from central
-Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.jar from clojars
 Downloading: org/checkerframework/checker-qual/3.37.0/checker-qual-3.37.0.jar from central
+Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.jar from central
+Downloading: nvd-clojure/nvd-clojure/4.0.0/nvd-clojure-4.0.0.jar from clojars
 Downloading: org/eclipse/jetty/jetty-io/12.0.5/jetty-io-12.0.5.jar from central
 Downloading: org/sonatype/ossindex/ossindex-service-client/1.8.2/ossindex-service-client-1.8.2.jar from central
 Downloading: org/jsoup/jsoup/1.16.2/jsoup-1.16.2.jar from central
-Downloading: org/eclipse/jetty/jetty-client/12.0.5/jetty-client-12.0.5.jar from central
 Downloading: org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar from central
-Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.jar from central
 Downloading: org/apache/maven/resolver/maven-resolver-impl/1.9.18/maven-resolver-impl-1.9.18.jar from central
-Downloading: org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar from central
+Downloading: io/github/jeremylong/jcs3-slf4j/1.0.5/jcs3-slf4j-1.0.5.jar from central
 Downloading: org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar from central
-Downloading: org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar from central
 Downloading: org/apache/maven/resolver/maven-resolver-util/1.9.18/maven-resolver-util-1.9.18.jar from central
-Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.jar from central
+Downloading: org/apache/maven/maven-model/3.9.6/maven-model-3.9.6.jar from central
+Downloading: org/eclipse/sisu/org.eclipse.sisu.inject/0.9.0.M2/org.eclipse.sisu.inject-0.9.0.M2.jar from central
 Downloading: org/apache/maven/resolver/maven-resolver-named-locks/1.9.18/maven-resolver-named-locks-1.9.18.jar from central
+Downloading: com/moandjiezana/toml/toml4j/0.7.2/toml4j-0.7.2.jar from central
 Downloading: org/apache/maven/maven-repository-metadata/3.9.6/maven-repository-metadata-3.9.6.jar from central
 Downloading: javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar from central
-Downloading: com/github/package-url/packageurl-java/1.4.1/packageurl-java-1.4.1.jar from central
+Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar from central
 Downloading: org/sonatype/goodies/package-url-java/1.1.1/package-url-java-1.1.1.jar from central
 Downloading: org/apache/maven/maven-plugin-api/3.9.6/maven-plugin-api-3.9.6.jar from central
-Downloading: org/apache/maven/maven-builder-support/3.9.6/maven-builder-support-3.9.6.jar from central
+Downloading: com/github/package-url/packageurl-java/1.4.1/packageurl-java-1.4.1.jar from central
 Downloading: com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.16.0/jackson-datatype-jsr310-2.16.0.jar from central
-Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.jar from central
-Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar from central
-Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.jar from central
-Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar from central
 Downloading: org/apache/maven/maven-artifact/3.9.6/maven-artifact-3.9.6.jar from central
-[2024-06-25 02:28:09.911] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "rencg", :version "1.0.61-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Downloading: org/glassfish/javax.json/1.1.4/javax.json-1.1.4.jar from central
+Downloading: org/whitesource/pecoff4j/0.0.2.1/pecoff4j-0.0.2.1.jar from central
+Downloading: javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar from central
+Downloading: com/google/code/gson/gson/2.9.0/gson-2.9.0.jar from central
+[2024-07-02 02:28:39.091] INFO nvd-clojure - User-provided config: {:delete-config? false, :group "com.github.pmonks", :name "rencg", :version "1.0.61-SNAPSHOT", :nvd {:output-dir "../target/nvd"}}
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Instance is null, returning unconfigured instance
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: Setting default auxiliaries to "ODC"
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
 INFO: setting defaultCompositeCacheAttributes to [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1719282490630, LastAccessTime = 1719282490630, getTimeToLiveSeconds() = 86399, createTime = 1719282490630 ]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: setting defaultElementAttributes to [ IS_LATERAL = false, IS_SPOOL = true, IS_REMOTE = false, IS_ETERNAL = false, MaxLifeSeconds = 86400, IdleTime = 1800, CreateTime = 1719887319403, LastAccessTime = 1719887319403, getTimeToLiveSeconds() = 86399, createTime = 1719887319403 ]
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for CENTRAL
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [CENTRAL] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@1f9d4b0e] for auxiliary [jcs.auxiliary.ODC]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Set maxKeySize to: "1,000,000"
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/9.0.8/data/9.0/cache
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [CENTRAL] : Indexed Disk Cache is alive.
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for POM
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [POM] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@18d11527] for auxiliary [jcs.auxiliary.ODC]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Set maxKeySize to: "1,000,000"
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/9.0.8/data/9.0/cache
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [POM] : Indexed Disk Cache is alive.
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.memory.AbstractDoubleLinkedListMemoryCache 
 INFO: initialized MemoryCache for NODEAUDIT
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCache 
 INFO: Constructed cache with name [NODEAUDIT] and cache attributes [ useLateral = true, useRemote = true, useDisk = true, maxObjs = 0, maxSpoolPerRun = -1, diskUsagePattern = UPDATE, spoolChunkSize = 2 ]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: No cache event logger defined for auxiliary [jcs.auxiliary.ODC]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.AuxiliaryCacheConfigurator 
 INFO: Using standard serializer [org.apache.commons.jcs3.utils.serialization.StandardSerializer@4998e74b] for auxiliary [jcs.auxiliary.ODC]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Set maxKeySize to: "1,000,000"
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Cache file root directory: /home/runner/.m2/repository/org/owasp/dependency-check-utils/9.0.8/data/9.0/cache
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
 INFO: Region [NODEAUDIT] : Indexed Disk Cache is alive.
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheConfigurator 
 INFO: Parsed regions [CENTRAL, POM, NODEAUDIT]
-Jun 25, 2024 2:28:10 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
-INFO: Finished configuration in 106 ms.
-[2024-06-25 02:28:10.677] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
-[2024-06-25 02:28:11.122] INFO Engine - Checking for updates
-[2024-06-25 02:28:32.744] INFO NvdApiDataSource - NVD API has 255,067 records in this update
-[2024-06-25 02:28:53.358] INFO NvdApiDataSource - Downloaded 10,000/255,067 (4%)
-[2024-06-25 02:29:21.816] INFO NvdApiDataSource - Downloaded 20,000/255,067 (8%)
-[2024-06-25 02:29:41.221] INFO NvdApiDataSource - Downloaded 30,000/255,067 (12%)
-[2024-06-25 02:30:11.380] INFO NvdApiDataSource - Downloaded 40,000/255,067 (16%)
-[2024-06-25 02:30:39.288] INFO NvdApiDataSource - Downloaded 50,000/255,067 (20%)
-[2024-06-25 02:31:12.457] INFO NvdApiDataSource - Downloaded 60,000/255,067 (24%)
-[2024-06-25 02:31:35.162] INFO NvdApiDataSource - Downloaded 70,000/255,067 (27%)
-[2024-06-25 02:31:47.906] INFO NvdApiDataSource - Downloaded 80,000/255,067 (31%)
-[2024-06-25 02:32:05.348] INFO NvdApiDataSource - Downloaded 90,000/255,067 (35%)
-[2024-06-25 02:32:27.738] INFO NvdApiDataSource - Downloaded 100,000/255,067 (39%)
-[2024-06-25 02:32:39.911] INFO NvdApiDataSource - Downloaded 110,000/255,067 (43%)
-[2024-06-25 02:33:14.818] INFO NvdApiDataSource - Downloaded 120,000/255,067 (47%)
-[2024-06-25 02:33:38.827] INFO NvdApiDataSource - Downloaded 130,000/255,067 (51%)
-[2024-06-25 02:34:05.010] INFO NvdApiDataSource - Downloaded 140,000/255,067 (55%)
-[2024-06-25 02:34:32.264] INFO NvdApiDataSource - Downloaded 150,000/255,067 (59%)
-[2024-06-25 02:34:49.896] INFO NvdApiDataSource - Downloaded 160,000/255,067 (63%)
-[2024-06-25 02:35:23.833] INFO NvdApiDataSource - Downloaded 170,000/255,067 (67%)
-[2024-06-25 02:35:31.880] INFO NvdApiDataSource - Downloaded 180,000/255,067 (71%)
-[2024-06-25 02:35:51.391] INFO NvdApiDataSource - Downloaded 190,000/255,067 (74%)
-[2024-06-25 02:36:12.489] INFO NvdApiDataSource - Downloaded 200,000/255,067 (78%)
-[2024-06-25 02:36:40.978] INFO NvdApiDataSource - Downloaded 210,000/255,067 (82%)
-[2024-06-25 02:36:58.715] INFO NvdApiDataSource - Downloaded 220,000/255,067 (86%)
-[2024-06-25 02:37:27.021] INFO NvdApiDataSource - Downloaded 230,000/255,067 (90%)
-[2024-06-25 02:37:44.605] INFO NvdApiDataSource - Downloaded 240,000/255,067 (94%)
-[2024-06-25 02:38:25.277] INFO NvdApiDataSource - Downloaded 250,000/255,067 (98%)
-[2024-06-25 02:38:43.183] INFO NvdApiDataSource - Downloaded 255,067/255,067 (100%)
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 1/128 (1%) in 1,731ms
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 2/128 (2%) in 2,213ms
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 3/128 (2%) in 3,682ms
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 4/128 (3%) in 3,356ms
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 5/128 (4%) in 2,642ms
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 6/128 (5%) in 3,131ms
-[2024-06-25 02:38:43.184] INFO NvdApiDataSource - Completed processing batch 7/128 (5%) in 3,000ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 8/128 (6%) in 1,608ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 9/128 (7%) in 1,398ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 10/128 (8%) in 987ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 11/128 (9%) in 681ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 12/128 (9%) in 608ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 13/128 (10%) in 658ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 14/128 (11%) in 675ms
-[2024-06-25 02:38:43.185] INFO NvdApiDataSource - Completed processing batch 15/128 (12%) in 682ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 16/128 (13%) in 870ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 17/128 (13%) in 779ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 18/128 (14%) in 786ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 19/128 (15%) in 1,193ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 20/128 (16%) in 1,045ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 21/128 (16%) in 1,042ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 22/128 (17%) in 975ms
-[2024-06-25 02:38:43.186] INFO NvdApiDataSource - Completed processing batch 23/128 (18%) in 1,505ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 24/128 (19%) in 1,270ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 25/128 (20%) in 1,520ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 26/128 (20%) in 915ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 27/128 (21%) in 1,157ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 28/128 (22%) in 1,367ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 29/128 (23%) in 1,615ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 30/128 (23%) in 751ms
-[2024-06-25 02:38:43.187] INFO NvdApiDataSource - Completed processing batch 31/128 (24%) in 1,145ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 32/128 (25%) in 1,165ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 33/128 (26%) in 757ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 34/128 (27%) in 730ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 35/128 (27%) in 591ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 36/128 (28%) in 156ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 37/128 (29%) in 964ms
-[2024-06-25 02:38:43.188] INFO NvdApiDataSource - Completed processing batch 38/128 (30%) in 567ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 39/128 (30%) in 250ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 40/128 (31%) in 679ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 41/128 (32%) in 511ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 42/128 (33%) in 443ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 43/128 (34%) in 637ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 44/128 (34%) in 790ms
-[2024-06-25 02:38:43.189] INFO NvdApiDataSource - Completed processing batch 45/128 (35%) in 500ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 46/128 (36%) in 259ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 47/128 (37%) in 377ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 48/128 (38%) in 495ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 49/128 (38%) in 631ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 50/128 (39%) in 638ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 51/128 (40%) in 525ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 52/128 (41%) in 761ms
-[2024-06-25 02:38:43.190] INFO NvdApiDataSource - Completed processing batch 53/128 (41%) in 644ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 54/128 (42%) in 507ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 55/128 (43%) in 578ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 56/128 (44%) in 369ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 57/128 (45%) in 433ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 58/128 (45%) in 402ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 59/128 (46%) in 415ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 60/128 (47%) in 469ms
-[2024-06-25 02:38:43.191] INFO NvdApiDataSource - Completed processing batch 61/128 (48%) in 490ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 62/128 (48%) in 465ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 63/128 (49%) in 396ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 64/128 (50%) in 588ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 65/128 (51%) in 690ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 66/128 (52%) in 546ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 67/128 (52%) in 407ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 68/128 (53%) in 395ms
-[2024-06-25 02:38:43.192] INFO NvdApiDataSource - Completed processing batch 69/128 (54%) in 458ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 70/128 (55%) in 476ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 71/128 (55%) in 469ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 72/128 (56%) in 354ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 73/128 (57%) in 430ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 74/128 (58%) in 463ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 75/128 (59%) in 410ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 76/128 (59%) in 380ms
-[2024-06-25 02:38:43.193] INFO NvdApiDataSource - Completed processing batch 77/128 (60%) in 437ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 78/128 (61%) in 407ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 79/128 (62%) in 394ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 80/128 (63%) in 382ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 81/128 (63%) in 408ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 82/128 (64%) in 406ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 83/128 (65%) in 340ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 84/128 (66%) in 405ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 85/128 (66%) in 371ms
-[2024-06-25 02:38:43.194] INFO NvdApiDataSource - Completed processing batch 86/128 (67%) in 412ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 87/128 (68%) in 468ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 88/128 (69%) in 309ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 89/128 (70%) in 519ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 90/128 (70%) in 391ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 91/128 (71%) in 372ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 92/128 (72%) in 394ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 93/128 (73%) in 442ms
-[2024-06-25 02:38:43.195] INFO NvdApiDataSource - Completed processing batch 94/128 (73%) in 396ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 95/128 (74%) in 431ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 96/128 (75%) in 435ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 97/128 (76%) in 463ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 98/128 (77%) in 424ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 99/128 (77%) in 418ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 100/128 (78%) in 420ms
-[2024-06-25 02:38:43.196] INFO NvdApiDataSource - Completed processing batch 101/128 (79%) in 362ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 102/128 (80%) in 293ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 103/128 (80%) in 421ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 104/128 (81%) in 386ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 105/128 (82%) in 361ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 106/128 (83%) in 391ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 107/128 (84%) in 330ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 108/128 (84%) in 73ms
-[2024-06-25 02:38:43.197] INFO NvdApiDataSource - Completed processing batch 109/128 (85%) in 308ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 110/128 (86%) in 338ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 111/128 (87%) in 370ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 112/128 (88%) in 431ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 113/128 (88%) in 426ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 114/128 (89%) in 44ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 115/128 (90%) in 418ms
-[2024-06-25 02:38:43.198] INFO NvdApiDataSource - Completed processing batch 116/128 (91%) in 452ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 117/128 (91%) in 418ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 118/128 (92%) in 98ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 119/128 (93%) in 401ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 120/128 (94%) in 413ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 121/128 (95%) in 52ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 122/128 (95%) in 438ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 123/128 (96%) in 406ms
-[2024-06-25 02:38:43.199] INFO NvdApiDataSource - Completed processing batch 124/128 (97%) in 42ms
-[2024-06-25 02:38:43.200] INFO NvdApiDataSource - Completed processing batch 125/128 (98%) in 48ms
-[2024-06-25 02:38:43.200] INFO NvdApiDataSource - Completed processing batch 126/128 (98%) in 111ms
-[2024-06-25 02:38:43.200] INFO NvdApiDataSource - Completed processing batch 127/128 (99%) in 49ms
-[2024-06-25 02:38:43.217] INFO NvdApiDataSource - Completed processing batch 128/128 (100%) in 63ms
-[2024-06-25 02:38:43.329] INFO KnownExploitedDataSource - Updating CISA Known Exploited Vulnerability list: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
-[2024-06-25 02:38:43.591] INFO CveDB - Begin database defrag
-[2024-06-25 02:38:46.468] INFO CveDB - End database defrag (2879 ms)
-[2024-06-25 02:38:46.470] INFO Engine - Check for updates complete (635348 ms)
-[2024-06-25 02:38:46.650] INFO Engine - 
+Jul 02, 2024 2:28:39 AM org.apache.commons.jcs3.engine.control.CompositeCacheManager 
+INFO: Finished configuration in 49 ms.
+[2024-07-02 02:28:39.435] WARN NexusAnalyzer - Disabling Nexus analyzer - please specify the URL to a Nexus Server
+[2024-07-02 02:28:39.878] INFO Engine - Checking for updates
+[2024-07-02 02:30:58.642] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:33:15.935] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:36:39.585] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:37:33.495] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:38:05.996] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:41:58.582] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:43:08.962] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:43:25.094] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:43:55.493] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:44:43.118] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:45:03.707] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:45:16.462] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 02:45:50.528] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 02:48:22.700] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:48:43.218] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:49:20.032] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 02:55:08.840] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:55:37.753] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:57:07.331] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 02:58:15.912] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 02:58:55.866] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:10:53.648] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:11:14.112] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:11:26.901] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 03:12:27.483] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 03:13:32.857] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:16:42.743] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:17:26.282] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:20:17.301] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:23:35.851] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:25:12.389] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:25:32.836] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:26:23.720] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 03:26:39.904] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:27:00.355] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:27:13.101] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 03:27:56.103] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 03:29:03.947] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:30:30.470] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:31:41.032] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:31:56.989] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:32:17.453] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:33:02.287] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 03:38:23.094] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:39:06.635] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:40:57.134] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:41:43.288] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:42:51.162] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:44:15.684] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:45:07.265] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:45:23.194] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:45:43.669] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:45:56.410] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 03:46:32.321] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 03:47:38.734] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:48:29.735] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:50:13.235] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 03:51:16.288] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:58:37.921] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 03:59:47.911] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:05:23.021] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:06:09.510] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:06:25.545] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:06:45.992] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:07:39.494] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 04:14:31.158] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:15:29.544] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:16:16.687] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:18:31.720] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:21:56.202] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:26:55.882] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:27:16.351] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:27:47.850] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 04:30:41.250] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:31:22.221] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 04:32:26.966] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:34:06.940] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:35:45.023] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:38:15.479] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:39:11.080] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:40:03.932] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:45:09.174] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:45:49.726] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:47:31.710] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:48:19.428] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:50:02.250] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:50:38.543] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:53:35.307] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 04:53:55.730] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:54:24.682] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 04:57:39.221] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 04:59:28.396] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:00:37.727] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:01:27.427] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:02:16.168] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:03:57.971] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:05:14.734] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:09:17.050] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:10:09.176] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:10:25.071] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:11:43.097] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:13:11.167] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:14:11.135] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:14:56.727] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:16:31.687] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:17:56.195] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:19:40.732] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:20:53.548] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:24:15.794] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:25:19.713] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:28:31.367] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:28:59.465] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:33:18.938] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:34:16.973] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:39:21.855] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:45:39.420] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:48:35.687] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:49:05.853] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:53:06.263] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:56:08.303] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 05:56:49.159] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 05:59:26.239] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:00:46.462] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:01:34.619] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:34.725] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:34.794] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:34.861] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:34.929] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:01:34.929] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:34.997] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:01:34.997] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:35.065] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 06:01:35.065] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:35.139] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 8 time
+[2024-07-02 06:01:35.139] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:35.207] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 9 time
+[2024-07-02 06:01:35.207] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:35.275] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 10 time
+[2024-07-02 06:01:35.275] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:01:35.348] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 11 time
+[2024-07-02 06:03:02.012] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:03:30.336] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:06:45.986] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:09:04.014] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:09:35.988] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:14:59.604] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:15:20.062] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:15:32.811] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:16:56.668] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 06:17:12.642] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:17:33.108] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:18:34.501] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:19:26.679] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:20:06.536] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:20:57.203] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:22:10.869] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:25:07.255] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:26:07.714] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:32:52.378] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:33:12.837] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:33:25.590] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:33:44.851] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 06:34:42.408] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:35:07.299] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:37:26.442] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:40:18.734] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:41:12.199] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:41:45.556] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:44:31.548] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:45:25.612] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:46:21.695] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:47:49.599] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:48:51.513] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:49:07.617] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:49:28.082] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:49:53.664] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:50:51.646] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:51:12.091] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:51:48.044] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:54:12.707] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:54:33.189] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 06:55:09.893] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 06:58:05.494] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 06:59:37.017] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:00:26.792] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:00:42.533] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:01:03.253] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:01:16.023] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 07:01:58.666] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 7 time
+[2024-07-02 07:02:51.578] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:04:44.596] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.RequestNotExecutedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:05:05.055] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:05:57.791] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 07:08:06.804] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:10:54.410] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:11:10.197] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:11:30.682] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:12:10.287] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 6 time
+[2024-07-02 07:13:56.747] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:14:54.652] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:16:05.413] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:18:47.322] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:19:21.016] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:20:29.354] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:21:21.831] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+[2024-07-02 07:23:17.918] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:25:44.949] INFO AsyncHttpRequestRetryExec - Recoverable I/O exception (org.apache.hc.core5.http.ConnectionClosedException) caught when processing request to {s}->https://services.nvd.nist.gov:443
+[2024-07-02 07:26:18.813] WARN NvdApiRetryStrategy - NVD API request failures are occurring; retrying request for the 5 time
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.event.ElementEventQueue 
+INFO: Element event queue destroyed: org.apache.commons.jcs3.engine.control.event.ElementEventQueue@5103eea2
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] fromRemote [false]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] auxiliary [NODEAUDIT]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] put 0 into auxiliary [NODEAUDIT]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.PooledCacheEventQueue 
+INFO: Cache event queue destroyed: CacheEventQueue [listenerId=1900368255, cacheName=NODEAUDIT]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [NODEAUDIT] : Saving keys to: NODEAUDIT, key count: 0
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [NODEAUDIT] : Finished saving keys.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [NODEAUDIT] : Shutdown complete.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [NODEAUDIT] disposing of memory cache.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.memory.AbstractMemoryCache 
+INFO: Memory Cache dispose called.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] fromRemote [false]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] auxiliary [CENTRAL]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] put 0 into auxiliary [CENTRAL]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.PooledCacheEventQueue 
+INFO: Cache event queue destroyed: CacheEventQueue [listenerId=1900368255, cacheName=CENTRAL]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [CENTRAL] : Saving keys to: CENTRAL, key count: 0
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [CENTRAL] : Finished saving keys.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [CENTRAL] : Shutdown complete.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [CENTRAL] disposing of memory cache.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.memory.AbstractMemoryCache 
+INFO: Memory Cache dispose called.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] fromRemote [false]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] auxiliary [POM]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] put 0 into auxiliary [POM]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.PooledCacheEventQueue 
+INFO: Cache event queue destroyed: CacheEventQueue [listenerId=1900368255, cacheName=POM]
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [POM] : Saving keys to: POM, key count: 0
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [POM] : Finished saving keys.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+INFO: Region [POM] : Shutdown complete.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.control.CompositeCache 
+INFO: In DISPOSE, [POM] disposing of memory cache.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.engine.memory.AbstractMemoryCache 
+INFO: Memory Cache dispose called.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+SEVERE: Region [NODEAUDIT] : Not alive and dispose was called, filename: NODEAUDIT
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+SEVERE: Region [CENTRAL] : Not alive and dispose was called, filename: CENTRAL
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.AbstractDiskCache 
+INFO: In dispose, destroying event queue.
+Jul 02, 2024 7:27:43 AM org.apache.commons.jcs3.auxiliary.disk.indexed.IndexedDiskCache 
+SEVERE: Region [POM] : Not alive and dispose was called, filename: POM
+{:clojure.main/message
+ "Execution error (OutOfMemoryError) at com.fasterxml.jackson.core.JsonFactory/createParser (JsonFactory.java:1341).\nJava heap space\n",
+ :clojure.main/triage
+ {:clojure.error/class java.lang.OutOfMemoryError,
+  :clojure.error/line 1341,
+  :clojure.error/cause "Java heap space",
+  :clojure.error/symbol
+  com.fasterxml.jackson.core.JsonFactory/createParser,
+  :clojure.error/source "JsonFactory.java",
+  :clojure.error/phase :execution},
+ :clojure.main/trace
+ {:via
+  [{:type java.lang.OutOfMemoryError,
+    :message "Java heap space",
+    :at
+    [com.fasterxml.jackson.core.JsonFactory
+     createParser
+     "JsonFactory.java"
+     1341]}],
+  :trace
+  [[com.fasterxml.jackson.core.JsonFactory
+    createParser
+    "JsonFactory.java"
+    1341]
+   [com.fasterxml.jackson.databind.ObjectMapper
+    readValue
+    "ObjectMapper.java"
+    3846]
+   [com.fasterxml.jackson.databind.ObjectMapper
+    readValue
+    "ObjectMapper.java"
+    3814]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    338]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]
+   [io.github.jeremylong.openvulnerability.client.nvd.NvdCveClient
+    next
+    "NvdCveClient.java"
+    341]],
+  :cause "Java heap space"}}
 
-Dependency-Check is an open source tool performing a best effort analysis of 3rd party dependencies; false positives and false negatives may exist in the analysis performed by the tool. Use of the tool and the reporting provided constitutes acceptance for use in an AS IS condition, and there are NO warranties, implied or otherwise, with regard to the analysis or its use. Any use of the tool and the reporting provided is at the user's risk. In no event shall the copyright holder or OWASP be held liable for any damages whatsoever arising out of or in connection with the use of this tool, the analysis performed, or the resulting report.
+Execution error (OutOfMemoryError) at com.fasterxml.jackson.core.JsonFactory/createParser (JsonFactory.java:1341).
+Java heap space
 
-
-   About ODC: https://jeremylong.github.io/DependencyCheck/general/internals.html
-   False Positives: https://jeremylong.github.io/DependencyCheck/general/suppression.html
-
-💖 Sponsor: https://github.com/sponsors/jeremylong
-
-
-[2024-06-25 02:38:46.650] INFO Engine - Analysis Started
-[2024-06-25 02:38:46.787] INFO Engine - Finished Archive Analyzer (0 seconds)
-[2024-06-25 02:38:46.793] INFO Engine - Finished File Name Analyzer (0 seconds)
-[2024-06-25 02:38:47.120] INFO Engine - Finished Jar Analyzer (0 seconds)
-[2024-06-25 02:38:47.130] INFO Engine - Finished Central Analyzer (0 seconds)
-[2024-06-25 02:38:47.131] INFO Engine - Finished Dependency Merging Analyzer (0 seconds)
-[2024-06-25 02:38:47.315] INFO Engine - Finished Hint Analyzer (0 seconds)
-[2024-06-25 02:38:47.316] INFO Engine - Finished Version Filter Analyzer (0 seconds)
-[2024-06-25 02:38:49.209] INFO CPEAnalyzer - Created CPE Index (1 seconds)
-[2024-06-25 02:38:49.544] INFO Engine - Finished CPE Analyzer (2 seconds)
-[2024-06-25 02:38:49.547] INFO Engine - Finished False Positive Analyzer (0 seconds)
-[2024-06-25 02:38:49.554] INFO Engine - Finished NVD CVE Analyzer (0 seconds)
-[2024-06-25 02:38:49.803] INFO Engine - Finished Sonatype OSS Index Analyzer (0 seconds)
-[2024-06-25 02:38:49.803] INFO Engine - Finished Vulnerability Suppression Analyzer (0 seconds)
-[2024-06-25 02:38:49.813] INFO Engine - Finished Known Exploited Vulnerability Analyzer (0 seconds)
-[2024-06-25 02:38:49.814] INFO Engine - Finished Dependency Bundling Analyzer (0 seconds)
-[2024-06-25 02:38:49.815] INFO Engine - Finished Unused Suppression Rule Analyzer (0 seconds)
-[2024-06-25 02:38:49.816] WARN ArchiveAnalyzer - Failed to delete the Archive Analyzer's temporary files from `/tmp/dctempc1dc7317-6ea9-4bc4-816e-885eee8088b5/check14169404773060693397tmp`, see the log for more details
-[2024-06-25 02:38:49.816] WARN JarAnalyzer - Failed to delete the JAR Analyzder's temporary files from `/tmp/dctempc1dc7317-6ea9-4bc4-816e-885eee8088b5/check8588866585299182288tmp`, see the log for more details
-[2024-06-25 02:38:49.818] INFO Engine - Analysis Complete (3 seconds)
-[2024-06-25 02:38:49.866] INFO ReportGenerator - Writing XML report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-report.xml
-[2024-06-25 02:38:49.957] INFO ReportGenerator - Writing HTML report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-report.html
-[2024-06-25 02:38:50.035] INFO ReportGenerator - Writing JSON report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-report.json
-[2024-06-25 02:38:50.058] INFO ReportGenerator - Writing CSV report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-report.csv
-[2024-06-25 02:38:50.061] INFO ReportGenerator - Writing SARIF report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-report.sarif
-[2024-06-25 02:38:50.070] INFO ReportGenerator - Writing JENKINS report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-jenkins.html
-[2024-06-25 02:38:50.085] INFO ReportGenerator - Writing JUNIT report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-junit.xml
-[2024-06-25 02:38:50.095] INFO ReportGenerator - Writing GITLAB report to: /home/runner/work/rencg/rencg/.nvd/../target/nvd/dependency-check-gitlab.json
