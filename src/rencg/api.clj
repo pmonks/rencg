@@ -24,19 +24,19 @@
   (load "non_native"))
 
 (defn re-groups-ncg
-  "Equivalent to clojure.core/re-groups, but instead of returning
-  a sequence containing the entire match and each group, it returns
-  a map of the named-capturing groups as well as the start and end of
-  the entire match (in keys :start and :end).
+  "Equivalent to [clojure.core/re-groups](https://clojuredocs.org/clojure.core/re-groups),
+  but instead of returning a sequence containing the entire match and each
+  group, it returns a map of the named-capturing groups as well as the start and
+  end of the entire match (in keys `:start` and `:end`).
 
-  The key for each named-capturing group that's found is the (String)
-  name of that group, and the corresponding value is the (String) text
-  that matched that group.
+  The key for each named-capturing group that's found is the (`String`) name of
+  that group, and the corresponding value is the (`String`) text that matched
+  that group.
 
-  If the same regex is being used many times, the 2-arg version will be
-  more efficient as it allows the caller to calculate the named-
-  capturing groups in the regex once, then reuse that information,
-  avoiding re-parsing of the regex on each call."
+  If the same regex is being used many times, the 2-arg version may be more
+  efficient as it allows the caller to calculate the named-capturing groups in
+  the regex once, then reuse that information, potentially avoiding re-parsing
+  of the regex on each call."
   ([^java.util.regex.Matcher m] (re-groups-ncg m nil))
   ([^java.util.regex.Matcher m ncgs]
    (let [ncgs (or ncgs (re-named-groups m))]
@@ -56,13 +56,14 @@
                  :end   (.end   m)}))))))
 
 (defn re-matches-ncg
-  "Equivalent to clojure.core/re-matches, but returns the result
-  of calling re-groups-ncg when there's a match, or nil otherwise.
+  "Equivalent to [clojure.core/re-matches](https://clojuredocs.org/clojure.core/re-matches),
+  but returns the result of calling [[re-groups-ncg]] when there's a match, or
+  `nil` otherwise.
 
-  If the regex is being reused many times, the 3-arg version will
-  be more efficient as it allows the caller to calculate the
-  named-capturing groups in the regex once, then reuse that
-  information, avoiding re-parsing of the regex on each call."
+  If the regex is being reused many times, the 3-arg version may be more
+  efficient as it allows the caller to calculate the named-capturing groups in
+  the regex once, then reuse that information, potentially avoiding re-parsing
+  of the regex on each call."
   ([^java.util.regex.Pattern re s] (re-matches-ncg re s nil))
   ([^java.util.regex.Pattern re s ncgs]
    (let [m (re-matcher re s)]
@@ -70,15 +71,14 @@
        (re-groups-ncg m ncgs)))))
 
 (defmulti re-find-ncg
-  "Equivalent to clojure.core/re-find, but returns the result
-  of calling re-groups-ncg when the pattern is found, or nil
-  otherwise.
+  "Equivalent to [clojure.core/re-find](https://clojuredocs.org/clojure.core/re-find),
+  but returns the result of calling [[re-groups-ncg]] when the pattern is found,
+  or `nil` otherwise.
 
-  If multiple finds are being performed, the versions where
-  the sequence of named-capturing groups is passed in will be
-  more efficient as they allow the caller to calculate the
-  named-capturing groups in the regex once, then reuse that
-  information, avoiding re-parsing of the regex on each call."
+  If multiple finds are being performed, the versions where the sequence of
+  named-capturing groups is passed in may be more efficient as they allow the
+  caller to calculate the named-capturing groups in the regex once, then reuse
+  that information, potentially avoiding re-parsing of the regex on each call."
   {:arglists '([m] [m ncgs] [re s] [re s ncgs])}
   (fn [f & _] (type f)))
 
@@ -99,14 +99,14 @@
      (re-find-ncg m ncgs))))
 
 (defn re-seq-ncg
-  "Equivalent to clojure.core/re-seq, but returns the result
-  of calling re-groups-ncg on each successive match, or nil
-  if there are no matches.
+  "Equivalent to [clojure.core/re-seq](https://clojuredocs.org/clojure.core/re-seq),
+  but returns the result of calling [[re-groups-ncg]] on each successive match,
+  or `nil` if there are no matches.
 
-  If the regex is being reused many times, the 3-arg version
-  will be more efficient as it allows the caller to calculate
-  the named-capturing groups in the regex once, then reuse that
-  information, avoiding re-parsing of the regex on each call."
+  If the regex is being reused many times, the 3-arg version may be more
+  efficient as it allows the caller to calculate the named-capturing groups in
+  the regex once, then reuse that information, potentially avoiding re-parsing
+  of the regex on each call."
   ([^java.util.regex.Pattern re s] (re-seq-ncg re s nil))
   ([^java.util.regex.Pattern re s ncgs]
    (let [ncgs (or ncgs (re-named-groups re))
