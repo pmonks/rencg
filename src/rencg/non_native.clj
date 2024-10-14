@@ -20,11 +20,12 @@
 
 (defmulti re-named-groups
   "Returns the names of all of the named-capturing groups in the
-  given regular expression (or matcher) as a set of Strings, or an empty
-  set if there aren't any.
+  given regular expression (`java.util.regex.Pattern`) or matcher
+  (`java.util.regex.Matcher`) as a set of `String`s, or an empty set if there
+  aren't any.
 
   Note: on older JDKs (pre v20), this uses a JDK-agnostic workaround for
-  https://bugs.openjdk.org/browse/JDK-7032377"
+  [JDK-7032377](https://bugs.openjdk.org/browse/JDK-7032377)."
   {:arglists '([re] [m])}
   (fn [arg] (type arg)))
 

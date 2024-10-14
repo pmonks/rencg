@@ -12,7 +12,7 @@ A micro-library for Clojure that provides first class support for accessing the 
 
 #### Does `rencg` work on older JVMs that don't have the [`.namedGroups()` API](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/regex/Pattern.html#namedGroups())?
 
-Yes. On older (pre v20) JVMs, `rencg` [gracefully degrades by manually parsing regexes to determine the named capturing groups](https://github.com/pmonks/rencg/blob/release/src/rencg/non_native.clj).
+Yes. On older (pre v20) JVMs, `rencg` [falls back on manually parsing regexes to determine the named capturing groups](https://github.com/pmonks/rencg/blob/release/src/rencg/non_native.clj).
 
 #### Why not [rufoa/named-re](https://github.com/rufoa/named-re)?
 
@@ -42,6 +42,54 @@ $ lein try com.github.pmonks/rencg
 $ deps-try com.github.pmonks/rencg
 ```
 
+### Demo
+
+```clojure
+(require '[rencg.api :as rencg])
+
+
+;; re-matches-ncg - for when you want to match the entire input
+(rencg/re-matches-ncg #"(?<foo>foo)" "bar")
+;=> nil
+
+(rencg/re-matches-ncg #"(?<foo>foo)" "foo")
+;=> {:start 0, :end 3, "foo" "foo"}
+
+(rencg/re-matches-ncg #"(?<foo>foo)+" "foofoo")
+;=> {:start 0, :end 6, "foo" "foo"}
+
+; Note: Java named capturing groups only capture a single value from the input, even if the
+; group is present multiple times. Also, the start and end indexes are for the entire match,
+; not where the named capturing groups are found (obviously, since there may be many named
+; capturing groups all of which have different start and end indexes).
+
+(rencg/re-matches-ncg #"((?<foo>foo)|(?<bar>bar))+" "foobarfoobarfoobarfoobar")
+;=> {:start 0, :end 24, "foo" "foo", "bar" "bar"}
+
+; This last example also shows the value of using named capturing groups instead of numbered
+; capturing groups (the latter being brittle, since non-named groups conflate grouping and
+; capture)
+
+
+;; re-seq-ncg - for when you want all matches of a named capturing group that exist within
+;;              the input
+(rencg/re-seq-ncg #"((?<foo>foo)|(?<bar>bar))" "foobarfoobarfoobarfoobar")
+;=> ({:start 0, :end 3, "foo" "foo"}
+;    {:start 3, :end 6, "bar" "bar"}
+;    {:start 6, :end 9, "foo" "foo"}
+;    {:start 9, :end 12, "bar" "bar"}
+;    {:start 12, :end 15, "foo" "foo"}
+;    {:start 15, :end 18, "bar" "bar"}
+;    {:start 18, :end 21, "foo" "foo"}
+;    {:start 21, :end 24, "bar" "bar"})
+
+
+;; re-find-ncg - for when you want to extract something specific from the input, using
+;;               standard Clojure map lookups
+(get (rencg/re-find-ncg #"(?i)(?<foo>foo)" "THIS IS SOME TEXT WITH FOO IN IT") "foo")
+;=> "FOO"
+```
+
 ## Usage
 
 [API documentation is available here](https://pmonks.github.io/rencg/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/), and the [unit tests](https://github.com/pmonks/rencg/blob/release/test/rencg/api_test.clj) are also worth perusing to see worked examples.
@@ -56,7 +104,7 @@ $ deps-try com.github.pmonks/rencg
 
 ### Developer Workflow
 
-This project uses the [git-flow branching strategy](https://nvie.com/posts/a-successful-git-branching-model/), and the permanent branches are called `release` and `dev`, and any changes to the `release` branch are considered a release and auto-deployed (JARs to Clojars, API docs to GitHub Pages, etc.).
+This project uses the [git-flow branching strategy](https://nvie.com/posts/a-successful-git-branching-model/), and the permanent branches are called `release` and `dev`.  Any changes to the `release` branch are considered a release and auto-deployed (JARs to Clojars, API docs to GitHub Pages, etc.).
 
 For this reason, **all development must occur either in branch `dev`, or (preferably) in temporary branches off of `dev`.**  All PRs from forked repos must also be submitted against `dev`; the `release` branch is **only** updated from `dev` via PRs created by the core development team.  All other changes submitted to `release` will be rejected.
 
