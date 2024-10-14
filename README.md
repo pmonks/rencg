@@ -53,10 +53,10 @@ $ deps-try com.github.pmonks/rencg
 ;=> nil
 
 (rencg/re-matches-ncg #"(?<foo>foo)" "foo")
-;=> {:start 0, :end 3, "foo" "foo"}
+;=> {:start 0, :end 3, :match "foo", "foo" "foo"}
 
 (rencg/re-matches-ncg #"(?<foo>foo)+" "foofoo")
-;=> {:start 0, :end 6, "foo" "foo"}
+;=> {:start 0, :end 6, :match "foofoo", "foo" "foo"}
 
 ; Note: Java named capturing groups only capture a single value from the input, even if the
 ; group is present multiple times. Also, the start and end indexes are for the entire match,
@@ -64,7 +64,7 @@ $ deps-try com.github.pmonks/rencg
 ; capturing groups all of which have different start and end indexes).
 
 (rencg/re-matches-ncg #"((?<foo>foo)|(?<bar>bar))+" "foobarfoobarfoobarfoobar")
-;=> {:start 0, :end 24, "foo" "foo", "bar" "bar"}
+;=> {:start 0, :end 24, :match "foobarfoobarfoobarfoobar", "foo" "foo", "bar" "bar"}
 
 ; This last example also shows the value of using named capturing groups instead of numbered
 ; capturing groups (the latter being brittle, since non-named groups conflate grouping and
@@ -74,14 +74,14 @@ $ deps-try com.github.pmonks/rencg
 ;; re-seq-ncg - for when you want all matches of a named capturing group that exist within
 ;;              the input
 (rencg/re-seq-ncg #"((?<foo>foo)|(?<bar>bar))" "foobarfoobarfoobarfoobar")
-;=> ({:start 0, :end 3, "foo" "foo"}
-;    {:start 3, :end 6, "bar" "bar"}
-;    {:start 6, :end 9, "foo" "foo"}
-;    {:start 9, :end 12, "bar" "bar"}
-;    {:start 12, :end 15, "foo" "foo"}
-;    {:start 15, :end 18, "bar" "bar"}
-;    {:start 18, :end 21, "foo" "foo"}
-;    {:start 21, :end 24, "bar" "bar"})
+;=> ({:start 0, :end 3, :match "foo", "foo" "foo"}
+;    {:start 3, :end 6, :match "bar", "bar" "bar"}
+;    {:start 6, :end 9, :match "foo", "foo" "foo"}
+;    {:start 9, :end 12, :match "bar", "bar" "bar"}
+;    {:start 12, :end 15, :match "foo", "foo" "foo"}
+;    {:start 15, :end 18, :match "bar", "bar" "bar"}
+;    {:start 18, :end 21, :match "foo", "foo" "foo"}
+;    {:start 21, :end 24, :match "bar", "bar" "bar"})
 
 
 ;; re-find-ncg - for when you want to extract something specific from the input, using
