@@ -19,6 +19,7 @@
 (ns rencg.api)
 
 ; Dynamically load the re-named-groups implementation, based on JVM capabilities
+(declare re-named-groups)
 (if (contains? (set (map #(.getName ^java.lang.reflect.Method %) (.getMethods java.util.regex.Pattern))) "namedGroups")
   (load "native")
   (load "non_native"))
@@ -26,8 +27,8 @@
 (defn re-groups-ncg
   "Equivalent to [clojure.core/re-groups](https://clojuredocs.org/clojure.core/re-groups),
   but instead of returning a sequence containing the entire match and each
-  group, it returns a map of the named-capturing groups as well as the start and
-  end of the entire match (in keys `:start` and `:end`).
+  group, it returns a map of the named-capturing groups as well as the start
+  index (`:start`), end index (`:end`), and text (`:match`) of the entire match.
 
   The key for each named-capturing group that's found is the (`String`) name of
   that group, and the corresponding value is the (`String`) text that matched
@@ -47,13 +48,15 @@
          (let [v (try (.group m f) (catch java.lang.IllegalArgumentException _ nil))]
            (recur (merge result
                          {:start (.start m)
-                          :end   (.end   m)}
+                          :end   (.end   m)
+                          :match (.group m)}
                          (when v {f v}))
                   (first r)
                   (rest r)))
          (merge result
                 {:start (.start m)
-                 :end   (.end   m)}))))))
+                 :end   (.end   m)
+                 :match (.group m)}))))))
 
 (defn re-matches-ncg
   "Equivalent to [clojure.core/re-matches](https://clojuredocs.org/clojure.core/re-matches),
