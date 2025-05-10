@@ -1,12 +1,8 @@
-| | | |
-|---:|:---:|:---:|
-| [**release**](https://github.com/pmonks/rencg/tree/release) | [![CI](https://github.com/pmonks/rencg/actions/workflows/ci.yml/badge.svg?branch=release)](https://github.com/pmonks/rencg/actions?query=workflow%3ACI+branch%3Arelease) | [![Dependencies](https://github.com/pmonks/rencg/actions/workflows/dependencies.yml/badge.svg?branch=release)](https://github.com/pmonks/rencg/actions?query=workflow%3Adependencies+branch%3Arelease) |
-| [**dev**](https://github.com/pmonks/rencg/tree/dev)  | [![CI](https://github.com/pmonks/rencg/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3ACI+branch%3Adev) | [![Dependencies](https://github.com/pmonks/rencg/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Adependencies+branch%3Adev) |
-
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/rencg)](https://clojars.org/com.github.pmonks/rencg/) [![Open Issues](https://img.shields.io/github/issues/pmonks/rencg.svg)](https://github.com/pmonks/rencg/issues) [![License](https://img.shields.io/github/license/pmonks/rencg.svg)](https://github.com/pmonks/rencg/blob/release/LICENSE) [![Vulnerabilities](https://github.com/pmonks/rencg/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Avulnerabilities+branch%3Adev)
-
-
 # rencg
+
+[![CI](https://github.com/pmonks/rencg/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3ACI+branch%3Adev) [![Dependencies](https://github.com/pmonks/rencg/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Adependencies+branch%3Adev) [![Vulnerabilities](https://github.com/pmonks/rencg/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Avulnerabilities+branch%3Adev)
+<br/>
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/rencg)](https://clojars.org/com.github.pmonks/rencg/) [![Open Issues](https://img.shields.io/github/issues/pmonks/rencg.svg)](https://github.com/pmonks/rencg/issues) [![License](https://img.shields.io/github/license/pmonks/rencg.svg)](https://github.com/pmonks/rencg/blob/release/LICENSE) 
 
 A micro-library for Clojure that provides first class support for accessing the values of [named-capturing groups](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html#groupname) in regular expressions. It has no dependencies, other than on Clojure and the JVM versions it supports, and is [only around 100 lines of code](https://github.com/pmonks/rencg/blob/release/src/rencg/).
 
@@ -22,21 +18,25 @@ Because that library [monkey patches core Clojure](https://github.com/rufoa/name
 
 `rencg` is available as a Maven artifact from [Clojars](https://clojars.org/com.github.pmonks/rencg).
 
-### Trying it Out
+## API Documentation
 
-#### Clojure CLI
+[API documentation is available here](https://pmonks.github.io/rencg/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/), and the [unit tests](https://github.com/pmonks/rencg/blob/release/test/rencg/api_test.clj) are also worth perusing to see worked examples.
+
+## Trying it Out
+
+### Clojure CLI
 
 ```shell
 $ clj -Sdeps '{:deps {com.github.pmonks/rencg {:mvn/version "RELEASE"}}}'
 ```
 
-#### Leiningen
+### Leiningen
 
 ```shell
 $ lein try com.github.pmonks/rencg
 ```
 
-#### deps-try
+### deps-try
 
 ```shell
 $ deps-try com.github.pmonks/rencg
@@ -89,10 +89,6 @@ $ deps-try com.github.pmonks/rencg
 (get (rencg/re-find-ncg #"(?i)(?<foo>foo)" "THIS IS SOME TEXT WITH FOO IN IT") "foo")
 ;=> "FOO"
 ```
-
-## Usage
-
-[API documentation is available here](https://pmonks.github.io/rencg/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/), and the [unit tests](https://github.com/pmonks/rencg/blob/release/test/rencg/api_test.clj) are also worth perusing to see worked examples.
 
 ## Contributor Information
 
