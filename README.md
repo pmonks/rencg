@@ -27,19 +27,19 @@ Because that library [monkey patches core Clojure](https://github.com/rufoa/name
 ### Clojure CLI
 
 ```shell
-$ clj -Sdeps '{:deps {com.github.pmonks/rencg {:mvn/version "RELEASE"}}}'
+clj -Sdeps '{:deps {com.github.pmonks/rencg {:mvn/version "RELEASE"}}}'
 ```
 
 ### Leiningen
 
 ```shell
-$ lein try com.github.pmonks/rencg
+lein try com.github.pmonks/rencg
 ```
 
 ### deps-try
 
 ```shell
-$ deps-try com.github.pmonks/rencg
+deps-try com.github.pmonks/rencg
 ```
 
 ### Demo
