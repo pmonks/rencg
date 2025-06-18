@@ -1,8 +1,13 @@
 # rencg
 
-[![CI](https://github.com/pmonks/rencg/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3ACI+branch%3Adev) [![Dependencies](https://github.com/pmonks/rencg/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Adependencies+branch%3Adev) [![Vulnerabilities](https://github.com/pmonks/rencg/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Avulnerabilities+branch%3Adev)
+[![CI](https://github.com/pmonks/rencg/actions/workflows/ci.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3ACI+branch%3Adev)
+[![Dependencies](https://github.com/pmonks/rencg/actions/workflows/dependencies.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Adependencies+branch%3Adev)
+[![Vulnerabilities](https://github.com/pmonks/rencg/actions/workflows/vulnerabilities.yml/badge.svg?branch=dev)](https://github.com/pmonks/rencg/actions?query=workflow%3Avulnerabilities+branch%3Adev)
 <br/>
-[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/rencg)](https://clojars.org/com.github.pmonks/rencg/) [![Open Issues](https://img.shields.io/github/issues/pmonks/rencg.svg)](https://github.com/pmonks/rencg/issues) [![License](https://img.shields.io/github/license/pmonks/rencg.svg)](https://github.com/pmonks/rencg/blob/release/LICENSE) 
+[![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/rencg)](https://clojars.org/com.github.pmonks/rencg/)
+[![Open Issues](https://img.shields.io/github/issues/pmonks/rencg.svg)](https://github.com/pmonks/rencg/issues)
+[![License](https://img.shields.io/github/license/pmonks/rencg.svg)](https://github.com/pmonks/rencg/blob/release/LICENSE) 
+![Maintained](https://badges.ws/badge/?label=maintained&value=yes,+at+author's+discretion)
 
 A micro-library for Clojure that provides first class support for accessing the values of [named-capturing groups](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html#groupname) in regular expressions. It has no dependencies, other than on Clojure and the JVM versions it supports, and is [only around 100 lines of code](https://github.com/pmonks/rencg/blob/release/src/rencg/).
 
