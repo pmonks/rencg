@@ -25,7 +25,7 @@ Because that library [monkey patches core Clojure](https://github.com/rufoa/name
 
 ## API Documentation
 
-[API documentation is available here](https://pmonks.github.io/rencg/), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/), and the [unit tests](https://github.com/pmonks/rencg/blob/release/test/rencg/api_test.clj) are also worth perusing to see worked examples.
+[API documentation is available here](https://pmonks.github.io/rencg/rencg.api.html), or [here on cljdoc](https://cljdoc.org/d/com.github.pmonks/rencg/), and the [unit tests](https://github.com/pmonks/rencg/blob/release/test/rencg/api_test.clj) are also worth perusing to see worked examples.
 
 ## Trying it Out
 

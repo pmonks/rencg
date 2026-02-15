@@ -9,6 +9,7 @@
 ;
 
 (ns rencg.api
+  "The public API of [`rencg`](https://github.com/pmonks/rencg)."
   (:refer-clojure :exclude [re-groups re-matches re-find re-seq]))
 
 (defmulti re-named-groups
@@ -47,7 +48,7 @@
 
   If the same regex is being used many times, the 2-arg version may be more
   efficient as it allows the caller to determine the named-capturing groups in
-  the regex once (e.g. using [[re-named-groups]], then reuse that information,
+  the regex once (e.g. using [[re-named-groups]]), then reuse that information,
   potentially avoiding re-parsing of the regex on each call."
   ([^java.util.regex.Matcher m] (re-groups m nil))
   ([^java.util.regex.Matcher m ncgs]
@@ -78,7 +79,7 @@
 
   If the regex is being reused many times, the 3-arg version may be more
   efficient as it allows the caller to determine the named-capturing groups in
-  the regex once (e.g. using [[re-named-groups]], then reuse that information,
+  the regex once (e.g. using [[re-named-groups]]), then reuse that information,
   potentially avoiding re-parsing of the regex on each call."
   ([^java.util.regex.Pattern re s] (re-matches re s nil))
   ([^java.util.regex.Pattern re s ncgs]
@@ -98,7 +99,7 @@
   If multiple finds are being performed, the versions where the sequence of
   named-capturing groups is passed in may be more efficient as they allow the
   caller to determine the named-capturing groups in the regex once (e.g. using
-  [[re-named-groups]], then reuse that information, potentially avoiding
+  [[re-named-groups]]), then reuse that information, potentially avoiding
   re-parsing of the regex on each call."
   {:arglists '([m] [m ncgs] [re s] [re s ncgs])}
   (fn [f & _] (type f)))
@@ -130,7 +131,7 @@
 
   If the regex is being reused many times, the 3-arg version may be more
   efficient as it allows the caller to determine the named-capturing groups in
-  the regex once (e.g. using [[re-named-groups]], then reuse that information,
+  the regex once (e.g. using [[re-named-groups]]), then reuse that information,
   potentially avoiding re-parsing of the regex on each call."
   ([^java.util.regex.Pattern re s] (re-seq re s nil))
   ([^java.util.regex.Pattern re s ncgs]
