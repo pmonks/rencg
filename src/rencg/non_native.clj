@@ -13,4 +13,4 @@
 #_{:clj-kondo/ignore [:unresolved-symbol]}
 (defmethod re-named-groups java.util.regex.Pattern
   [^java.util.regex.Pattern re]
-  (set (map second (re-seq #"\(\?<([a-zA-Z][a-zA-Z0-9]*)>" (str re)))))
+  (set (map second (clojure.core/re-seq #"\(\?<([a-zA-Z][a-zA-Z0-9]*)>" (str re)))))
