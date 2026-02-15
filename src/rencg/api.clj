@@ -9,6 +9,7 @@
 ;
 
 (ns rencg.api
+  "The public API of [`rencg`](https://github.com/pmonks/rencg)."
   (:refer-clojure :exclude [re-groups re-matches re-find re-seq]))
 
 (defmulti re-named-groups
