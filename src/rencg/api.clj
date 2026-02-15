@@ -1,30 +1,41 @@
 ;
 ; Copyright © 2023 Peter Monks
 ;
-; Licensed under the Apache License, Version 2.0 (the "License");
-; you may not use this file except in compliance with the License.
-; You may obtain a copy of the License at
+; This Source Code Form is subject to the terms of the Mozilla Public
+; License, v. 2.0. If a copy of the MPL was not distributed with this
+; file, You can obtain one at https://mozilla.org/MPL/2.0/.
 ;
-;     http://www.apache.org/licenses/LICENSE-2.0
-;
-; Unless required by applicable law or agreed to in writing, software
-; distributed under the License is distributed on an "AS IS" BASIS,
-; WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-; See the License for the specific language governing permissions and
-; limitations under the License.
-;
-; SPDX-License-Identifier: Apache-2.0
+; SPDX-License-Identifier: MPL-2.0
 ;
 
-(ns rencg.api)
+(ns rencg.api
+  (:refer-clojure :exclude [re-groups re-matches re-find re-seq]))
+
+(defmulti re-named-groups
+  "Returns the names of all of the named-capturing groups in the
+  given regular expression (`java.util.regex.Pattern`) or matcher
+  (`java.util.regex.Matcher`) as a set of `String`s, or an empty set if there
+  aren't any.  Returns `nil` if the argument is `nil`.
+
+  Note: on older JDKs (pre v20), this uses a JDK-agnostic workaround for
+  [JDK-7032377](https://bugs.openjdk.org/browse/JDK-7032377)."
+  {:arglists '([re] [m])}
+  (fn [arg] (type arg)))
+
+(defmethod re-named-groups nil
+  [_]
+  nil)
+
+(defmethod re-named-groups java.util.regex.Matcher
+  [^java.util.regex.Matcher m]
+  (re-named-groups (.pattern m)))
 
 ; Dynamically load the re-named-groups implementation, based on JVM capabilities
-(declare re-named-groups)
 (if (contains? (set (map #(.getName ^java.lang.reflect.Method %) (.getMethods java.util.regex.Pattern))) "namedGroups")
   (load "native")
   (load "non_native"))
 
-(defn re-groups-ncg
+(defn re-groups
   "Equivalent to [clojure.core/re-groups](https://clojuredocs.org/clojure.core/re-groups),
   but instead of returning a sequence containing the entire match and each
   group, it returns a map of the named-capturing groups as well as the start
@@ -35,15 +46,14 @@
   that group.
 
   If the same regex is being used many times, the 2-arg version may be more
-  efficient as it allows the caller to calculate the named-capturing groups in
-  the regex once, then reuse that information, potentially avoiding re-parsing
-  of the regex on each call."
-  ([^java.util.regex.Matcher m] (re-groups-ncg m nil))
+  efficient as it allows the caller to determine the named-capturing groups in
+  the regex once (e.g. using [[re-named-groups]], then reuse that information,
+  potentially avoiding re-parsing of the regex on each call."
+  ([^java.util.regex.Matcher m] (re-groups m nil))
   ([^java.util.regex.Matcher m ncgs]
-   (let [ncgs (or ncgs (re-named-groups m))]
-     (loop [result {}
-            f      ^String (first ncgs)
-            r      (rest ncgs)]
+   (let [ncgs (seq (or ncgs (re-named-groups m)))]
+     (loop [result          {}
+            [^String f & r] ncgs]
        (if f
          (let [v (try (.group m f) (catch java.lang.IllegalArgumentException _ nil))]
            (recur (merge result
@@ -51,69 +61,85 @@
                           :end   (.end   m)
                           :match (.group m)}
                          (when v {f v}))
-                  (first r)
-                  (rest r)))
+                  r))
          (merge result
                 {:start (.start m)
                  :end   (.end   m)
                  :match (.group m)}))))))
 
-(defn re-matches-ncg
+(def ^:deprecated ^:no-doc re-groups-ncg
+  "See [[re-groups]]"
+  re-groups)
+
+(defn re-matches
   "Equivalent to [clojure.core/re-matches](https://clojuredocs.org/clojure.core/re-matches),
-  but returns the result of calling [[re-groups-ncg]] when there's a match, or
-  `nil` otherwise.
+  but returns the result of calling [[re-groups]] when there's a match, or `nil`
+  otherwise.
 
   If the regex is being reused many times, the 3-arg version may be more
-  efficient as it allows the caller to calculate the named-capturing groups in
-  the regex once, then reuse that information, potentially avoiding re-parsing
-  of the regex on each call."
-  ([^java.util.regex.Pattern re s] (re-matches-ncg re s nil))
+  efficient as it allows the caller to determine the named-capturing groups in
+  the regex once (e.g. using [[re-named-groups]], then reuse that information,
+  potentially avoiding re-parsing of the regex on each call."
+  ([^java.util.regex.Pattern re s] (re-matches re s nil))
   ([^java.util.regex.Pattern re s ncgs]
    (let [m (re-matcher re s)]
      (when (.matches m)
-       (re-groups-ncg m ncgs)))))
+       (re-groups m ncgs)))))
 
-(defmulti re-find-ncg
+(def ^:deprecated ^:no-doc re-matches-ncg
+  "See [[re-matches]]"
+  re-matches)
+
+(defmulti re-find
   "Equivalent to [clojure.core/re-find](https://clojuredocs.org/clojure.core/re-find),
-  but returns the result of calling [[re-groups-ncg]] when the pattern is found,
-  or `nil` otherwise.
+  but returns the result of calling [[re-groups]] when the pattern is found, or
+  `nil` otherwise.
 
   If multiple finds are being performed, the versions where the sequence of
   named-capturing groups is passed in may be more efficient as they allow the
-  caller to calculate the named-capturing groups in the regex once, then reuse
-  that information, potentially avoiding re-parsing of the regex on each call."
+  caller to determine the named-capturing groups in the regex once (e.g. using
+  [[re-named-groups]], then reuse that information, potentially avoiding
+  re-parsing of the regex on each call."
   {:arglists '([m] [m ncgs] [re s] [re s ncgs])}
   (fn [f & _] (type f)))
 
-(defmethod re-find-ncg nil
+(defmethod re-find nil
   [& _]
-  (re-find nil))  ; This call to re-find may seem bogus, however it ensures we throw _exactly_ the same exception that it throws when passed nil
+  (clojure.core/re-find nil))  ; This call to clojure.core/re-find may seem bogus, however it ensures we throw _exactly_ the same exception that it throws when passed nil
 
-(defmethod re-find-ncg java.util.regex.Matcher
-  ([^java.util.regex.Matcher m] (re-find-ncg m nil))
+(defmethod re-find java.util.regex.Matcher
+  ([^java.util.regex.Matcher m] (re-find m nil))
   ([^java.util.regex.Matcher m ncgs]
    (when (.find m)
-     (re-groups-ncg m ncgs))))
+     (re-groups m ncgs))))
 
-(defmethod re-find-ncg java.util.regex.Pattern
-  ([^java.util.regex.Pattern re s] (re-find-ncg re s nil))
+(defmethod re-find java.util.regex.Pattern
+  ([^java.util.regex.Pattern re s] (re-find re s nil))
   ([^java.util.regex.Pattern re s ncgs]
    (let [m (re-matcher re s)]
-     (re-find-ncg m ncgs))))
+     (re-find m ncgs))))
 
-(defn re-seq-ncg
+(def ^:deprecated ^:no-doc re-find-ncg
+  "See [[re-find]]"
+  re-find)
+
+(defn re-seq
   "Equivalent to [clojure.core/re-seq](https://clojuredocs.org/clojure.core/re-seq),
-  but returns the result of calling [[re-groups-ncg]] on each successive match,
-  or `nil` if there are no matches.
+  but returns the result of calling [[re-groups]] on each successive match, or
+  `nil` if there are no matches.
 
   If the regex is being reused many times, the 3-arg version may be more
-  efficient as it allows the caller to calculate the named-capturing groups in
-  the regex once, then reuse that information, potentially avoiding re-parsing
-  of the regex on each call."
-  ([^java.util.regex.Pattern re s] (re-seq-ncg re s nil))
+  efficient as it allows the caller to determine the named-capturing groups in
+  the regex once (e.g. using [[re-named-groups]], then reuse that information,
+  potentially avoiding re-parsing of the regex on each call."
+  ([^java.util.regex.Pattern re s] (re-seq re s nil))
   ([^java.util.regex.Pattern re s ncgs]
    (let [ncgs (or ncgs (re-named-groups re))
          m    (re-matcher re s)]
      ((fn step []
         (when (.find m)
-          (cons (re-groups-ncg m ncgs) (lazy-seq (step)))))))))
+          (cons (re-groups m ncgs) (lazy-seq (step)))))))))
+
+(def ^:deprecated ^:no-doc re-seq-ncg
+  "See [[re-seq]]"
+  re-seq)
