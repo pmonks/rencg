@@ -60,33 +60,30 @@ deps-try com.github.pmonks/rencg
 (ncg/re-matches #"(?<foo>foo)" "foo")
 ;=> {:start 0, :end 3, :match "foo", "foo" "foo"}
 
-(ncg/re-matches #"(?<foo>foo)+" "foofoo")
-;=> {:start 0, :end 6, :match "foofoo", "foo" "foo"}
+(ncg/re-matches #"(?<foo>foo)+" "foofoofoofoofoo")
+;=> {:start 0, :end 15, :match "foofoofoofoofoo", "foo" "foo"}
 
 ; Note: Java named capturing groups only capture a single value from the input, even if the
-; group is present multiple times. Also, the start and end indexes are for the entire match,
-; not where the named capturing groups are found (obviously, since there may be many named
-; capturing groups all of which have different start and end indexes).
+; group is found multiple times.
 
-(ncg/re-matches #"((?<foo>foo)|(?<bar>bar))+" "foobarfoobarfoobarfoobar")
-;=> {:start 0, :end 24, :match "foobarfoobarfoobarfoobar", "foo" "foo", "bar" "bar"}
+(ncg/re-matches #"(?i:(?<foo>foo)|(?<bar>bar)|\s+|\z)+" "foo bar FOO BAR fOo fOO bAr bAR")
+;=> {:start 0, :end 31, :match "foo bar FOO BAR fOo fOO bAr bAR", "foo" "fOO", "bar" "bAR"}
 
-; This last example also shows the value of using named capturing groups instead of numbered
-; capturing groups (the latter being brittle, since non-named groups conflate grouping and
-; capture)
+; Note: the start and end indexes are for the entire match, not where the named capturing
+; groups are found (obviously, since there may be many named capturing groups all of which
+; have different start and end indexes).
 
 
-;; re-seq - for when you want all matches of a named capturing group that exist within
-;;          the input
-(ncg/re-seq #"((?<foo>foo)|(?<bar>bar))" "foobarfoobarfoobarfoobar")
+;; re-seq - for when you want a sequence of all matches that exist within the input
+(ncg/re-seq #"(?i:(?<foo>foo)|(?<bar>bar))" "foo bar FOO BAR fOo fOO bAr bAR")
 ;=> ({:start 0, :end 3, :match "foo", "foo" "foo"}
-;    {:start 3, :end 6, :match "bar", "bar" "bar"}
-;    {:start 6, :end 9, :match "foo", "foo" "foo"}
-;    {:start 9, :end 12, :match "bar", "bar" "bar"}
-;    {:start 12, :end 15, :match "foo", "foo" "foo"}
-;    {:start 15, :end 18, :match "bar", "bar" "bar"}
-;    {:start 18, :end 21, :match "foo", "foo" "foo"}
-;    {:start 21, :end 24, :match "bar", "bar" "bar"})
+;    {:start 4, :end 7, :match "bar", "bar" "bar"}
+;    {:start 8, :end 11, :match "FOO", "foo" "FOO"}
+;    {:start 12, :end 15, :match "BAR", "bar" "BAR"}
+;    {:start 16, :end 19, :match "fOo", "foo" "fOo"}
+;    {:start 20, :end 23, :match "fOO", "foo" "fOO"}
+;    {:start 24, :end 27, :match "bAr", "bar" "bAr"}
+;    {:start 28, :end 31, :match "bAR", "bar" "bAR"})
 
 
 ;; re-find - for when you want to extract something specific from the input, but using
